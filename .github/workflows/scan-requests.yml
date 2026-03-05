@@ -1,0 +1,94 @@
+# .github/workflows/scan-requests.yml
+#
+# Cool English — Nightly Activity Request Scanner
+# ─────────────────────────────────────────────────
+# Runs automatically every night at 2:00 AM UTC.
+# You can also trigger it manually from GitHub → Actions tab.
+#
+# SETUP STEPS:
+# 1. Push this file to your GitHub repo at:
+#      .github/workflows/scan-requests.yml
+#
+# 2. Add these secrets in GitHub → Settings → Secrets → Actions:
+#      ZOHO_EMAIL         your Zoho email
+#      ZOHO_PASSWORD      Zoho app-specific password
+#      ANTHROPIC_API_KEY  your Anthropic API key
+#
+# 3. The results.json file will be committed back to your repo
+#    automatically after each scan. Your dashboard reads from it.
+
+name: Nightly Activity Request Scan
+
+on:
+  # Runs every night at 2:00 AM UTC (adjust timezone as needed)
+  schedule:
+    - cron: "0 2 * * *"
+
+  # Also allows manual trigger from GitHub UI
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to scan"
+        required: false
+        default: "1"
+      recluster:
+        description: "Re-cluster all existing requests (true/false)"
+        required: false
+        default: "false"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit results.json back
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic python-dotenv
+
+      - name: Run scanner
+        env:
+          ZOHO_EMAIL: ${{ secrets.ZOHO_EMAIL }}
+          ZOHO_PASSWORD: ${{ secrets.ZOHO_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          DAYS="${{ github.event.inputs.days || '1' }}"
+          RECLUSTER="${{ github.event.inputs.recluster || 'false' }}"
+
+          ARGS="--days $DAYS --output requests.json"
+          if [ "$RECLUSTER" = "true" ]; then
+            ARGS="$ARGS --recluster"
+          fi
+
+          python scanner.py $ARGS
+
+      - name: Commit updated results
+        run: |
+          git config user.name  "Cool English Bot"
+          git config user.email "bot@coolenglish.com"
+
+          git add requests.json
+          git diff --staged --quiet || git commit -m "🤖 Nightly scan: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Post summary to workflow log
+        run: |
+          echo "### 📊 Scan Complete" >> $GITHUB_STEP_SUMMARY
+          python -c "
+          import json
+          data = json.load(open('requests.json'))
+          print(f'**Total requests:** {data[\"total\"]}')
+          print(f'**Last updated:** {data[\"last_updated\"]}')
+          print()
+          print('**Top 5 clusters:**')
+          for i, c in enumerate(data['clusters'][:5], 1):
+              print(f'{i}. {c[\"emoji\"]} {c[\"theme\"]} — {c[\"count\"]} requests')
+          " >> $GITHUB_STEP_SUMMARY
