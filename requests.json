@@ -1,0 +1,728 @@
+{
+  "last_updated": "2026-03-11T10:58:07.061726",
+  "total": 65,
+  "clusters": [
+    {
+      "theme": "Test/Spam/Technical Issues",
+      "emoji": "🧪",
+      "count": 16,
+      "examples": [
+        "test 99",
+        "fxghdfghdfghdfgh",
+        "23423433432"
+      ],
+      "requestIds": [
+        20,
+        26,
+        27,
+        28,
+        36,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "i.michalkova@phgymnazium.cz",
+        "giselerezende@gmail.com",
+        "chendermapfre@gmail.com",
+        "john@coolenglish.net",
+        "jt2128@gmail.com"
+      ]
+    },
+    {
+      "theme": "Grammar and Tenses",
+      "emoji": "📚",
+      "count": 14,
+      "examples": [
+        "phrasal",
+        "there is",
+        "relative pronoun"
+      ],
+      "requestIds": [
+        1,
+        3,
+        5,
+        10,
+        11,
+        13,
+        16,
+        24,
+        25,
+        34,
+        37,
+        38,
+        40,
+        42
+      ],
+      "teachers": [
+        "ihealthshop@gmail.com",
+        "katijuventus@gmail.com",
+        "info@onebyoneidiomas.com",
+        "teacher.recampolina@gmail.com",
+        "rafadorn@gmail.com",
+        "profluisacardosola@gmail.com",
+        "paranelsoncarvalho@gmail.com",
+        "symbolidiomas@gmail.com",
+        "agbrites@gmail.com",
+        "jefferson.asrs@gmail.com",
+        "claudia.eusebio@hotmail.com",
+        "lupitacmlaw@gmail.com"
+      ]
+    },
+    {
+      "theme": "Travel and Airport",
+      "emoji": "✈️",
+      "count": 4,
+      "examples": [
+        "airport",
+        "travel",
+        "at the airport A1 level"
+      ],
+      "requestIds": [
+        19,
+        31,
+        45,
+        47
+      ],
+      "teachers": [
+        "smartonenglishschool@gmail.com",
+        "speakup.privateclasses@gmail.com",
+        "profluisacardosola@gmail.com",
+        "gitalks.english@gmail.com"
+      ]
+    },
+    {
+      "theme": "Game Formats and Activities",
+      "emoji": "🎯",
+      "count": 4,
+      "examples": [
+        "jeopardy",
+        "memes",
+        "teleprompter"
+      ],
+      "requestIds": [
+        2,
+        6,
+        12,
+        29
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "livenupidiomas@gmail.com",
+        "sergiovera13@hotmail.com"
+      ]
+    },
+    {
+      "theme": "Business English",
+      "emoji": "💼",
+      "count": 4,
+      "examples": [
+        "Business English topics and vocab",
+        "business",
+        "legal vocabulary"
+      ],
+      "requestIds": [
+        17,
+        30,
+        43,
+        44
+      ],
+      "teachers": [
+        "fmarruda@gmail.com",
+        "agbrites@gmail.com",
+        "fluentwithchris@gmail.com"
+      ]
+    },
+    {
+      "theme": "Medical and Doctor Visits",
+      "emoji": "👨‍⚕️",
+      "count": 2,
+      "examples": [
+        "Going to the doctor",
+        "doctor"
+      ],
+      "requestIds": [
+        7,
+        41
+      ],
+      "teachers": [
+        "itsfernandateacher@gmail.com",
+        "michelle@interfaithrise.org"
+      ]
+    },
+    {
+      "theme": "Verbs and Actions",
+      "emoji": "🏃",
+      "count": 2,
+      "examples": [
+        "action verb game",
+        "make"
+      ],
+      "requestIds": [
+        8,
+        15
+      ],
+      "teachers": [
+        "tutoranita.english@gmail.com",
+        "yasmingrava2002@gmail.com"
+      ]
+    },
+    {
+      "theme": "Basic Vocabulary and Body Parts",
+      "emoji": "👤",
+      "count": 2,
+      "examples": [
+        "body parts",
+        "telling time"
+      ],
+      "requestIds": [
+        18,
+        21
+      ],
+      "teachers": [
+        "angelika.skotnicka@gmail.com",
+        "paranelsoncarvalho@gmail.com"
+      ]
+    },
+    {
+      "theme": "Alphabet and Basic Skills",
+      "emoji": "🔤",
+      "count": 2,
+      "examples": [
+        "the alphabet",
+        "alphabet"
+      ],
+      "requestIds": [
+        22,
+        23
+      ],
+      "teachers": [
+        "teacherlilianrodrigues@gmail.com"
+      ]
+    },
+    {
+      "theme": "Entertainment and Media",
+      "emoji": "🎬",
+      "count": 2,
+      "examples": [
+        "movie vocabulary"
+      ],
+      "requestIds": [
+        32,
+        33
+      ],
+      "teachers": [
+        "teacheralek.123@gmail.com"
+      ]
+    },
+    {
+      "theme": "Conversation and Dialogue",
+      "emoji": "💬",
+      "count": 2,
+      "examples": [
+        "Everyday English Dialogues",
+        "Heads Up where one member describes"
+      ],
+      "requestIds": [
+        9,
+        35
+      ],
+      "teachers": [
+        "michelsantos.teacher@gmail.com",
+        "smartonenglishschool@gmail.com"
+      ]
+    },
+    {
+      "theme": "Food and Kids Activities",
+      "emoji": "🍎",
+      "count": 1,
+      "examples": [
+        "vocabulary game about food to 6-7 years old kids"
+      ],
+      "requestIds": [
+        48
+      ],
+      "teachers": [
+        "gitalks.english@gmail.com"
+      ]
+    },
+    {
+      "theme": "Specialized Topics",
+      "emoji": "🌾",
+      "count": 1,
+      "examples": [
+        "agriculture"
+      ],
+      "requestIds": [
+        14
+      ],
+      "teachers": [
+        "raphael.laceerda@gmail.com"
+      ]
+    },
+    {
+      "theme": "Advanced/CAE",
+      "emoji": "🎓",
+      "count": 1,
+      "examples": [
+        "CAE"
+      ],
+      "requestIds": [
+        39
+      ],
+      "teachers": [
+        "fmarruda@gmail.com"
+      ]
+    },
+    {
+      "theme": "Sports/Martial Arts",
+      "emoji": "🥋",
+      "count": 1,
+      "examples": [
+        "d'arce brazilian jiu-jitsu submission"
+      ],
+      "requestIds": [
+        49
+      ],
+      "teachers": [
+        "ansonswh@protonmail.ch"
+      ]
+    },
+    {
+      "theme": "Greetings",
+      "emoji": "👋",
+      "count": 1,
+      "examples": [
+        "good morning"
+      ],
+      "requestIds": [
+        4
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com"
+      ]
+    },
+    {
+      "theme": "Communication with Teacher",
+      "emoji": "💌",
+      "count": 6,
+      "examples": [
+        "Thank you so much! My students always enjoy",
+        "Here you go let me know how it goes"
+      ],
+      "requestIds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "teachers": [
+        "jagibbs1@hotmail.com",
+        "john@coolenglish.net"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "subject": "💡 [Activity Request] from iHealth Shop",
+      "teacher": "ihealthshop@gmail.com",
+      "idea": "phrasal",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Silvia Maria Freire Torres",
+      "teacher": "sfreiretorres@gmail.com",
+      "idea": "memes",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from GEANINA KATI TAUNE",
+      "teacher": "katijuventus@gmail.com",
+      "idea": "there is",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from roseanemedeiros9@gmail.com",
+      "teacher": "roseanemedeiros9@gmail.com",
+      "idea": "good morning",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from info@onebyoneidiomas.com",
+      "teacher": "info@onebyoneidiomas.com",
+      "idea": "relative pronoun",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from livenupidiomas@gmail.com",
+      "teacher": "livenupidiomas@gmail.com",
+      "idea": "jeopardy",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from itsfernandateacher@gmail.com",
+      "teacher": "itsfernandateacher@gmail.com",
+      "idea": "Going to the doctor",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Anita Souza",
+      "teacher": "tutoranita.english@gmail.com",
+      "idea": "action verb game",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from michelsantos.teacher@gmail.com",
+      "teacher": "michelsantos.teacher@gmail.com",
+      "idea": "An activity like Heads Up where one member of the group has to make his/her team say the thing being described",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Renata Campolina",
+      "teacher": "teacher.recampolina@gmail.com",
+      "idea": "SUFFIXES",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from info@onebyoneidiomas.com",
+      "teacher": "info@onebyoneidiomas.com",
+      "idea": "verb to be",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from livenupidiomas@gmail.com",
+      "teacher": "livenupidiomas@gmail.com",
+      "idea": "jeopardy",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Rafael Dornelles",
+      "teacher": "rafadorn@gmail.com",
+      "idea": "Present Perfect",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Raphael Lacerda",
+      "teacher": "raphael.laceerda@gmail.com",
+      "idea": "agriculture",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Yasmin Grava",
+      "teacher": "yasmingrava2002@gmail.com",
+      "idea": "make",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Luisa Cardoso",
+      "teacher": "profluisacardosola@gmail.com",
+      "idea": "Adjectives",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Flavia M. B. Arruda",
+      "teacher": "fmarruda@gmail.com",
+      "idea": "Business English topics and vocab.",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from angelika.skotnicka@gmail.com",
+      "teacher": "angelika.skotnicka@gmail.com",
+      "idea": "telling time",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from smartonenglishschool@gmail.com",
+      "teacher": "smartonenglishschool@gmail.com",
+      "idea": "airport",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from ROSEANE MARIA DE MEDEIROS",
+      "teacher": "roseanemedeiros9@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: ROSEANE MARIA DE MEDEIROS Email: roseanemedeiros9@gmail.com Activity Idea: Estou assinando o cool english, mas não consigo entrar. Como faço? Submitted from the Cool English pers",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Nelson Neto",
+      "teacher": "paranelsoncarvalho@gmail.com",
+      "idea": "body parts",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from teacherlilianrodrigues@gmail.com",
+      "teacher": "teacherlilianrodrigues@gmail.com",
+      "idea": "the alphabet",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from teacherlilianrodrigues@gmail.com",
+      "teacher": "teacherlilianrodrigues@gmail.com",
+      "idea": "alphabet",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Nelson Neto",
+      "teacher": "paranelsoncarvalho@gmail.com",
+      "idea": "I would like to see more activities like the verbs set, to practice different verbs with different tenses, maybe a set 3 and 4. and also if you could, add past perfet to them",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Luisa Cardoso",
+      "teacher": "profluisacardosola@gmail.com",
+      "idea": "simple past",
+      "date": "unknown"
+    },
+    {
+      "subject": "RE: 💡 [Activity Request] from Ivana Michalková",
+      "teacher": "i.michalkova@phgymnazium.cz",
+      "idea": "Můžete mi je laskavě poslat, v profilu nic nevidím a už to řeším 14 dní From: Jt &lt;john@coolenglish.net&gt; Sent: Friday, February 27, 2026 11:08 AM To: Ivana Michalkova &lt;i.michalkova@phgymnazium.cz&gt; Subject: Re: 💡 [Activity Request] from I",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: 💡 [Activity Request] from Ivana Michalková",
+      "teacher": "i.michalkova@phgymnazium.cz",
+      "idea": "You print the receipt yourself through the Stripe dashboard. Go to dashboard - subscription - manage billing to access it. From: Cool English &lt;noreply@coolenglish.org&gt; To: &lt;john@coolenglish.net&gt; Date: Fri, 27 Feb 2026 03:28:25 -0500 Subj",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Ivana Michalková",
+      "teacher": "i.michalkova@phgymnazium.cz",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Ivana Michalková Email: i.michalkova@phgymnazium.cz Activity Idea: Neprodleně zašlete fakturu za platbu v lednu a v únoru. Máme zákonný nárok toto požadovat! Použijte k zaslání e",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from sergio vera",
+      "teacher": "sergiovera13@hotmail.com",
+      "idea": "teleprompter",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from agbrites@gmail.com",
+      "teacher": "agbrites@gmail.com",
+      "idea": "I'd be very pleased if you could develop a lesson about legal vocabulary. I have students who work as lawyers at a bank. Thanks!",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from speakup.privateclasses@gmail.com",
+      "teacher": "speakup.privateclasses@gmail.com",
+      "idea": "travel",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: 💡 [Activity Request] from Aleksandro Gomes",
+      "teacher": "teacheralek.123@gmail.com",
+      "idea": "movie vocabulary",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Aleksandro Gomes",
+      "teacher": "teacheralek.123@gmail.com",
+      "idea": "movie vocabulary",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Symbol Idiomas",
+      "teacher": "symbolidiomas@gmail.com",
+      "idea": "to and for activity",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from smartonenglishschool@gmail.com",
+      "teacher": "smartonenglishschool@gmail.com",
+      "idea": "Everyday English Dialogues",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from gisele",
+      "teacher": "giselerezende@gmail.com",
+      "idea": "mstery",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from agbrites@gmail.com",
+      "teacher": "agbrites@gmail.com",
+      "idea": "Hi! I am trying to find a lesson to teach possessive adjectives and personal pronouns together. Do you have something like that?",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Jefferson Armon",
+      "teacher": "jefferson.asrs@gmail.com",
+      "idea": "conditionals",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Flavia M. B. Arruda",
+      "teacher": "fmarruda@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Flavia M. B. Arruda Email: fmarruda@gmail.com Activity Idea: Activity Request from fmarruda@gmail.com: CAE Submitted from the Cool English personalized homepage. Reply directly t",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from claudia.eusebio@hotmail.com",
+      "teacher": "claudia.eusebio@hotmail.com",
+      "idea": "adverbs of frequency",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Michelle Davis",
+      "teacher": "michelle@interfaithrise.org",
+      "idea": "doctor",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Lupita Law",
+      "teacher": "lupitacmlaw@gmail.com",
+      "idea": "survive",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Chris F",
+      "teacher": "fluentwithchris@gmail.com",
+      "idea": "business",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Chris F",
+      "teacher": "fluentwithchris@gmail.com",
+      "idea": "business",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Luisa Cardoso",
+      "teacher": "profluisacardosola@gmail.com",
+      "idea": "travel",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from HENDEW_37",
+      "teacher": "chendermapfre@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: HENDEW_37 Email: chendermapfre@gmail.com Activity Idea: Activity Request from chendermapfre@gmail.com: Hello, I hope you’ve been doing well and that the new site launch and migra",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from gitalks.english@gmail.com",
+      "teacher": "gitalks.english@gmail.com",
+      "idea": "at the airport A1 level",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from gitalks.english@gmail.com",
+      "teacher": "gitalks.english@gmail.com",
+      "idea": "a vocabulary game about food to 6-7 years old kids",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from Anson Test Account",
+      "teacher": "ansonswh@protonmail.ch",
+      "idea": "Would love to see an activity centered around the d'arce brazilian jiu-jitsu submission",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from john@coolenglish.net",
+      "teacher": "john@coolenglish.net",
+      "idea": "23423433432",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from cool english",
+      "teacher": "jt2128@gmail.com",
+      "idea": "fxghdfghdfghdfgh",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from cool english",
+      "teacher": "jt2128@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: cool english Email: jt2128@gmail.com Activity Idea: Activity Request from jt2128@gmail.com: 456 Submitted from the Cool English personalized homepage. Reply directly to respond t",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from cool english",
+      "teacher": "jt2128@gmail.com",
+      "idea": "the fix will work",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from cool english",
+      "teacher": "jt2128@gmail.com",
+      "idea": "test 99",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from cool english",
+      "teacher": "jt2128@gmail.com",
+      "idea": "test 5",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from john@coolenglish.net",
+      "teacher": "john@coolenglish.net",
+      "idea": "test 2",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from john@coolenglish.net",
+      "teacher": "john@coolenglish.net",
+      "idea": "this is a test",
+      "date": "unknown"
+    },
+    {
+      "subject": "💡 [Activity Request] from jt2128@gmail.com",
+      "teacher": "jt2128@gmail.com",
+      "idea": "wnat more games",
+      "date": "unknown"
+    },
+    {
+      "subject": "[Contact Form] activity-request - from jt2128@gmail.com",
+      "teacher": "jt2128@gmail.com",
+      "idea": "test This email was sent from the Cool English Music contact form. You can reply directly to this email to respond to jt2128@gmail.com .",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: Activity request",
+      "teacher": "jagibbs1@hotmail.com",
+      "idea": "Thank you so much! My students always enjoy your activities . 👍 From: Jt &lt;john@coolenglish.net&gt; Sent: Sunday, January 5, 2025 3:20 PM To: jane gibbs &lt;jagibbs1@hotmail.com&gt; Subject: Re: Activity request Here you go let me know how it goe",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: Activity request",
+      "teacher": "john@coolenglish.net",
+      "idea": "Here you go let me know how it goes, remember the advanced level is pretty hard, there are new intermediate and basic level ones if you need. https://www.coolenglish.net/edu/categories/who-wants-to-be-a-millionaire  On Mon, 30 Dec 2024 12:09:40",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: Activity request",
+      "teacher": "jagibbs1@hotmail.com",
+      "idea": "Thank you! 👍👍 From: Jt &lt;john@coolenglish.net&gt; Sent: Monday, December 30, 2024 4:49 PM To: jane gibbs &lt;jagibbs1@hotmail.com&gt; Subject: Re: Activity request hey Jane, sure thing I’ll get on it this week. Thanks for the feedback.  On M",
+      "date": "unknown"
+    },
+    {
+      "subject": "Re: Activity request",
+      "teacher": "john@coolenglish.net",
+      "idea": "hey Jane, sure thing I’ll get on it this week. Thanks for the feedback.  On Mon, 30 Dec 2024 11:48:55 -0500 jane gibbs&lt;jagibbs1@hotmail.com&gt; wrote",
+      "date": "unknown"
+    },
+    {
+      "subject": "Activity request",
+      "teacher": "jagibbs1@hotmail.com",
+      "idea": "Hi John, I was wondering if you could create another game of Who wants to be a millionnaire? at Advanced level as I have quite big groups and I wanted to divide them into 2 teams with each playing their own game to see who can reach the highest amou",
+      "date": "unknown"
+    },
+    {
+      "subject": "Activity request",
+      "teacher": "jagibbs1@hotmail.com",
+      "idea": "Hi John, I was wondering if you could create another game of Who wants to be a millionnaire? at Advanced level as I have quite big groups and I wanted to divide them into 2 teams with each playing their own game to see who can reach the highest amou",
+      "date": "unknown"
+    }
+  ]
+}
