@@ -1,23 +1,10 @@
 #!/usr/bin/env python3
 """
-Cool English — Activity Request Scanner (Zoho REST API version)
-----------------------------------------------------------------
-Uses Zoho Mail REST API (free plan compatible) instead of IMAP.
-Requires OAuth 2.0 tokens — see README for one-time setup.
+Cool English — Activity Request Scanner (Zoho REST API)
+Includes spam/test filtering and AI clustering.
 
-Setup:
-  pip install anthropic requests python-dotenv
-
-Environment variables (.env or GitHub Secrets):
-  ZOHO_CLIENT_ID       from api-console.zoho.com
-  ZOHO_CLIENT_SECRET   from api-console.zoho.com
-  ZOHO_REFRESH_TOKEN   generated once via OAuth flow
-  ANTHROPIC_API_KEY    your Anthropic API key
-
-Run:
-  python scanner.py
-  python scanner.py --days 14    # scan last 14 days
-  python scanner.py --recluster  # re-cluster all existing requests
+Environment variables (GitHub Secrets):
+  ZOHO_CLIENT_ID, ZOHO_CLIENT_SECRET, ZOHO_REFRESH_TOKEN, ANTHROPIC_API_KEY
 """
 
 import requests
@@ -32,7 +19,7 @@ from pathlib import Path
 try:
     import anthropic
 except ImportError:
-    print("❌ Missing dependency: pip install anthropic requests")
+    print("❌ pip install anthropic requests")
     exit(1)
 
 try:
@@ -41,17 +28,29 @@ try:
 except ImportError:
     pass
 
-# ─── Configuration ────────────────────────────────────────────────────────────
+# ─── Config ───────────────────────────────────────────────────────────────────
 
 SUBJECT_FILTER = "[Activity Request]"
 OUTPUT_FILE = "requests.json"
 ZOHO_TOKEN_URL = "https://accounts.zoho.com/oauth/v2/token"
 ZOHO_API_BASE = "https://mail.zoho.com/api"
 
+# Phrases that indicate a test/spam submission — filtered out automatically
+SPAM_PATTERNS = [
+    r"^test\b", r"^testing\b", r"^hello\b", r"^hi\b", r"^asdf",
+    r"^[a-z]{1,4}$",          # single short random words
+    r"^\d+$",                  # only numbers
+    r"spam", r"ignore this",
+    r"^\.+$",                  # just dots
+]
+SPAM_RE = re.compile("|".join(SPAM_PATTERNS), re.IGNORECASE)
+
+MIN_IDEA_LENGTH = 8   # anything shorter is likely garbage
+
 
 # ─── OAuth ────────────────────────────────────────────────────────────────────
 
-def get_access_token() -> str:
+def get_access_token():
     print("🔐 Getting Zoho access token...")
     resp = requests.post(ZOHO_TOKEN_URL, data={
         "refresh_token": os.environ["ZOHO_REFRESH_TOKEN"],
@@ -62,71 +61,65 @@ def get_access_token() -> str:
     resp.raise_for_status()
     token = resp.json().get("access_token")
     if not token:
-        print(f"❌ Token response: {resp.json()}")
-        raise ValueError("Could not get access token. Check your ZOHO_REFRESH_TOKEN.")
-    print("✅ Access token obtained.")
+        raise ValueError(f"No access token: {resp.json()}")
+    print("✅ Token obtained.")
     return token
 
 
-def get_account_id(token: str) -> str:
+def get_account_id(token):
     headers = {"Authorization": f"Zoho-oauthtoken {token}"}
     resp = requests.get(f"{ZOHO_API_BASE}/accounts", headers=headers)
     resp.raise_for_status()
     accounts = resp.json().get("data", [])
     if not accounts:
-        raise ValueError("No Zoho Mail accounts found.")
-    account_id = str(accounts[0]["accountId"])
-    email = accounts[0].get("emailAddress", "unknown")
-    print(f"📬 Using account: {email} (ID: {account_id})")
-    return account_id
+        raise ValueError("No accounts found.")
+    aid = str(accounts[0]["accountId"])
+    print(f"📬 Account: {accounts[0].get('emailAddress')} ({aid})")
+    return aid
 
 
-# ─── Fetch Emails ─────────────────────────────────────────────────────────────
+# ─── Fetch + Filter ───────────────────────────────────────────────────────────
 
-def fetch_activity_requests(token: str, account_id: str, days: int = 1) -> list:
+def fetch_activity_requests(token, account_id, days=1):
     headers = {"Authorization": f"Zoho-oauthtoken {token}"}
     since_ms = int((datetime.now() - timedelta(days=days)).timestamp() * 1000)
-
-    print(f"🔍 Searching for '{SUBJECT_FILTER}' emails (last {days} days)...")
+    print(f"🔍 Searching last {days} days for '{SUBJECT_FILTER}'...")
 
     all_messages = []
     start = 1
-    limit = 50
-
     while True:
         params = {
             "searchKey": f'subject:"{SUBJECT_FILTER}"',
             "receivedTime": since_ms,
             "start": start,
-            "limit": limit,
+            "limit": 50,
             "includeto": "true",
         }
         resp = requests.get(
             f"{ZOHO_API_BASE}/accounts/{account_id}/messages/search",
-            headers=headers,
-            params=params,
+            headers=headers, params=params
         )
         resp.raise_for_status()
-        messages = resp.json().get("data", [])
-        if not messages:
+        msgs = resp.json().get("data", [])
+        if not msgs:
             break
-        all_messages.extend(messages)
-        print(f"  📨 Fetched {len(all_messages)} emails so far...")
-        if len(messages) < limit:
+        all_messages.extend(msgs)
+        if len(msgs) < 50:
             break
-        start += limit
+        start += 50
         time.sleep(0.3)
 
-    print(f"📬 Found {len(all_messages)} activity request email(s).")
+    print(f"📨 Found {len(all_messages)} raw emails.")
 
     results = []
+    skipped_spam = 0
+
     for msg in all_messages:
         message_id = msg.get("messageId")
-        folder_id = msg.get("folderId")
-        subject = msg.get("subject", "")
-        date_ms = msg.get("receivedtime", 0)
-        date_str = datetime.fromtimestamp(date_ms / 1000).strftime("%Y-%m-%d") if date_ms else "unknown"
-        from_addr = msg.get("fromAddress", "")
+        folder_id  = msg.get("folderId")
+        date_ms    = msg.get("receivedtime", 0)
+        date_str   = datetime.fromtimestamp(date_ms / 1000).strftime("%Y-%m-%d") if date_ms else "unknown"
+        from_addr  = msg.get("fromAddress", "")
 
         idea = None
         teacher_email = from_addr
@@ -137,67 +130,73 @@ def fetch_activity_requests(token: str, account_id: str, days: int = 1) -> list:
                 headers=headers,
             )
             if body_resp.status_code == 200:
-                body_data = body_resp.json().get("data", {})
-                body_text = body_data.get("content", "")
-                body_text = re.sub(r"<[^>]+>", " ", body_text)
-                body_text = re.sub(r"\s+", " ", body_text).strip()
-                idea = _parse_idea(body_text)
-                teacher_email = _extract_email(body_text) or from_addr
+                raw = body_resp.json().get("data", {}).get("content", "")
+                text = re.sub(r"<[^>]+>", " ", raw)
+                text = re.sub(r"\s+", " ", text).strip()
+                idea = _parse_idea(text)
+                teacher_email = _extract_email(text) or from_addr
         except Exception as e:
-            print(f"  ⚠️ Body fetch error for {message_id}: {e}")
+            print(f"  ⚠️ Body error {message_id}: {e}")
 
         if not idea:
             idea = msg.get("summary", "").strip()
 
-        if idea and len(idea) > 3:
-            results.append({
-                "subject": subject,
-                "teacher": teacher_email,
-                "idea": idea,
-                "date": date_str,
-            })
-            print(f"  → \"{idea}\" from {teacher_email}")
+        if not idea or len(idea) < MIN_IDEA_LENGTH:
+            skipped_spam += 1
+            continue
 
+        if SPAM_RE.search(idea):
+            print(f"  🗑️  Filtered spam: \"{idea}\"")
+            skipped_spam += 1
+            continue
+
+        results.append({
+            "teacher": teacher_email,
+            "idea": idea,
+            "date": date_str,
+        })
+        print(f"  ✅ \"{idea}\" — {teacher_email}")
+
+    print(f"\n📊 Kept {len(results)} real requests, filtered {skipped_spam} spam/test submissions.")
     return results
 
 
-def _parse_idea(body: str):
+def _parse_idea(body):
     patterns = [
         r"Activity Request from .+?:\s*(.+?)(?:Submitted|$)",
         r"Activity Idea[:\s]+.+?:\s*(.+?)(?:Submitted|$)",
     ]
-    for pattern in patterns:
-        match = re.search(pattern, body, re.IGNORECASE)
-        if match:
-            idea = match.group(1).strip()
-            if 3 < len(idea) < 300:
+    for p in patterns:
+        m = re.search(p, body, re.IGNORECASE)
+        if m:
+            idea = m.group(1).strip()
+            if MIN_IDEA_LENGTH < len(idea) < 300:
                 return idea
     return None
 
 
-def _extract_email(body: str):
+def _extract_email(body):
     for prefix in ["From:", "Email:"]:
-        match = re.search(rf"{prefix}\s*([\w.+-]+@[\w.-]+)", body)
-        if match:
-            return match.group(1)
+        m = re.search(rf"{prefix}\s*([\w.+-]+@[\w.-]+)", body)
+        if m:
+            return m.group(1)
     return None
 
 
 # ─── Claude Clustering ────────────────────────────────────────────────────────
 
-def cluster_with_claude(new_requests: list, existing: list = None) -> list:
+def cluster_with_claude(requests_list, existing=None):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    all_requests = (existing or []) + new_requests
-
-    if not all_requests:
+    all_reqs = (existing or []) + requests_list
+    if not all_reqs:
         return []
 
     idea_list = "\n".join(
         f'{i+1}. "{r["idea"]}" (from {r["teacher"]}, {r["date"]})'
-        for i, r in enumerate(all_requests)
+        for i, r in enumerate(all_reqs)
     )
 
-    print(f"\n🤖 Sending {len(all_requests)} requests to Claude for clustering...")
+    print(f"\n🤖 Clustering {len(all_reqs)} requests with Claude...")
 
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
@@ -207,46 +206,49 @@ def cluster_with_claude(new_requests: list, existing: list = None) -> list:
 Here are ALL submitted activity requests:
 {idea_list}
 
-Group into thematic clusters. For each cluster return:
-- theme: short clear name (e.g. "Medical / Doctor Visits")
+Group into thematic clusters relevant to ESL teaching. Ignore or group separately any that look like tests or spam.
+
+For each cluster return:
+- theme: clear ESL topic name (e.g. "Medical / Doctor Visits")
 - emoji: relevant emoji
 - count: number of requests
-- examples: 2-3 short phrases from actual requests
-- requestIds: 1-based list of request numbers in this cluster
+- examples: 2-3 short example phrases from actual requests
+- requestIds: 1-based list of request numbers
 - teachers: unique teacher emails
 
 Return ONLY a JSON array, no markdown:
 [{{"theme":"...","emoji":"...","count":3,"examples":["..."],"requestIds":[1,2],"teachers":["..."]}}]
 
-Sort by count descending. Every request must be in exactly one cluster."""}]
+Sort by count descending.
+"""}]
     )
 
-    text = response.content[0].text.strip().replace("```json", "").replace("```", "").strip()
+    text = response.content[0].text.strip().replace("```json","").replace("```","").strip()
     clusters = json.loads(text)
-    print(f"✅ Got {len(clusters)} clusters.")
+    print(f"✅ {len(clusters)} clusters.")
     return clusters
 
 
 # ─── Persistence ──────────────────────────────────────────────────────────────
 
-def load_existing(output_file: str) -> dict:
-    path = Path(output_file)
-    if path.exists():
-        with open(path) as f:
+def load_existing(path):
+    p = Path(path)
+    if p.exists():
+        with open(p) as f:
             return json.load(f)
     return {"requests": [], "clusters": [], "last_updated": None}
 
 
-def save_results(output_file: str, all_requests: list, clusters: list):
+def save_results(path, all_requests, clusters):
     data = {
         "last_updated": datetime.now().isoformat(),
         "total": len(all_requests),
         "clusters": clusters,
         "requests": all_requests,
     }
-    with open(output_file, "w") as f:
+    with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"\n💾 Saved {len(all_requests)} requests · {len(clusters)} clusters → {output_file}")
+    print(f"💾 Saved {len(all_requests)} requests · {len(clusters)} clusters → {path}")
 
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
@@ -273,12 +275,12 @@ def main():
 
     existing_keys = {(r["idea"], r["teacher"]) for r in existing_requests}
     unique_new = [r for r in new_requests if (r["idea"], r["teacher"]) not in existing_keys]
-    print(f"➕ {len(unique_new)} new unique requests to add.")
+    print(f"➕ {len(unique_new)} new unique requests.")
 
     all_requests = existing_requests + unique_new
 
     if not unique_new and not args.recluster:
-        print("✨ Nothing new. Done.")
+        print("✨ Nothing new.")
         return
 
     clusters = cluster_with_claude(
@@ -290,7 +292,7 @@ def main():
 
     print("\n📊 Top Requested Activities:")
     for i, c in enumerate(clusters[:5], 1):
-        print(f"  #{i} {c['emoji']} {c['theme']} — {c['count']} request(s)")
+        print(f"  #{i} {c['emoji']} {c['theme']} — {c['count']}x")
 
 
 if __name__ == "__main__":
