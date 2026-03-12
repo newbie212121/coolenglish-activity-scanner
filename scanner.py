@@ -35,6 +35,12 @@ OUTPUT_FILE = "requests.json"
 ZOHO_TOKEN_URL = "https://accounts.zoho.com/oauth/v2/token"
 ZOHO_API_BASE = "https://mail.zoho.com/api"
 
+# Emails from these addresses are skipped entirely (your own accounts)
+OWN_ADDRESSES = {
+    "john@coolenglish.net",
+    "jt2128@gmail.com",
+}
+
 # Phrases that indicate a test/spam submission — filtered out automatically
 SPAM_PATTERNS = [
     r"^test\b", r"^testing\b", r"^hello\b", r"^hi\b", r"^asdf",
@@ -119,6 +125,24 @@ def fetch_activity_requests(token, account_id, days=1):
         folder_id  = msg.get("folderId")
         date_ms    = msg.get("receivedtime", 0)
         date_str   = datetime.fromtimestamp(date_ms / 1000).strftime("%Y-%m-%d") if date_ms else "unknown"
+        from_addr  = msg.get("fromAddress", "").lower().strip()
+        subject    = msg.get("subject", "")
+
+        # Skip reply threads — these are your responses back to teachers
+        if re.match(r"^re:", subject, re.IGNORECASE):
+            print(f"  ⏭️  Skipping reply thread: {subject[:60]}")
+            skipped_spam += 1
+            continue
+
+        # Skip emails sent from your own addresses
+        if from_addr in OWN_ADDRESSES:
+            print(f"  ⏭️  Skipping own-address email from {from_addr}")
+            skipped_spam += 1
+            continue
+        message_id = msg.get("messageId")
+        folder_id  = msg.get("folderId")
+        date_ms    = msg.get("receivedtime", 0)
+        date_str   = datetime.fromtimestamp(date_ms / 1000).strftime("%Y-%m-%d") if date_ms else "unknown"
         from_addr  = msg.get("fromAddress", "")
 
         idea = None
@@ -185,67 +209,149 @@ def _extract_email(body):
 
 # ─── Claude Clustering ────────────────────────────────────────────────────────
 
-def cluster_with_claude(requests_list, existing=None):
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    all_reqs = (existing or []) + requests_list
-    if not all_reqs:
-        return []
-
-    idea_list = "\n".join(
-        f'{i+1}. "{r["idea"]}" (from {r["teacher"]}, {r["date"]})'
-        for i, r in enumerate(all_reqs)
-    )
-
-    print(f"\n🤖 Clustering {len(all_reqs)} requests with Claude...")
-
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=4096,
-        messages=[{"role": "user", "content": f"""You are analyzing ESL teacher activity requests for a language learning website called Cool English.
-
-Here are ALL submitted activity requests:
-{idea_list}
-
-Group into thematic clusters relevant to ESL teaching. Ignore or group separately any that look like tests or spam.
-
-For each cluster return:
-- theme: clear ESL topic name (e.g. "Medical / Doctor Visits")
-- emoji: relevant emoji
-- count: number of requests
-- examples: 2-3 short example phrases from actual requests
-- requestIds: 1-based list of request numbers
-- teachers: unique teacher emails
-
-Return ONLY a JSON array, no markdown, no trailing commas:
-[{{"theme":"...","emoji":"...","count":3,"examples":["..."],"requestIds":[1,2],"teachers":["..."]}}]
-
-Sort by count descending. Be concise in examples to keep the response short.
-"""}]
-    )
-
-    text = response.content[0].text.strip().replace("```json","").replace("```","").strip()
-
-    # If response was truncated, attempt to salvage valid clusters up to the break point
+def _safe_json_parse(text, label="response"):
+    """Parse JSON, salvaging partial output if truncated."""
+    text = text.strip().replace("```json", "").replace("```", "").strip()
     try:
-        clusters = json.loads(text)
+        return json.loads(text)
     except json.JSONDecodeError as e:
-        print(f"⚠️  JSON parse error: {e}. Attempting to salvage partial response...")
-        # Truncate to last complete object and close the array
+        print(f"⚠️  JSON parse error in {label}: {e}. Attempting salvage...")
         last_close = text.rfind("},")
         if last_close == -1:
             last_close = text.rfind("}")
         if last_close != -1:
             salvaged = text[:last_close + 1] + "]"
             try:
-                clusters = json.loads(salvaged)
-                print(f"♻️  Salvaged {len(clusters)} clusters from partial response.")
+                result = json.loads(salvaged)
+                print(f"♻️  Salvaged {len(result)} items.")
+                return result
             except json.JSONDecodeError:
-                raise ValueError(f"Could not parse Claude's response even after salvage attempt.\nRaw text:\n{text[:500]}")
-        else:
-            raise ValueError(f"Claude returned unparseable response:\n{text[:500]}")
+                pass
+        raise ValueError(f"Could not parse {label}:\n{text[:500]}")
 
+
+def cluster_all_with_claude(all_requests):
+    """Full re-cluster of every request. Used for --recluster flag."""
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    if not all_requests:
+        return []
+
+    idea_list = "\n".join(
+        f'{i+1}. "{r["idea"]}" (from {r["teacher"]})'
+        for i, r in enumerate(all_requests)
+    )
+    print(f"\n🤖 Full re-clustering {len(all_requests)} requests with Claude...")
+
+    response = client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=4096,
+        messages=[{"role": "user", "content": f"""You are analyzing ESL teacher activity requests for Cool English.
+
+Here are ALL submitted activity requests:
+{idea_list}
+
+Group into thematic clusters relevant to ESL teaching. Ignore or group separately any that look like tests, spam, or support emails.
+
+Return ONLY a JSON array, no markdown, no trailing commas:
+[{{"theme":"Grammar - Verb Tenses","emoji":"⏰","count":3,"examples":["present perfect","simple past"],"requestIds":[1,2,3],"teachers":["teacher@example.com"]}}]
+
+Sort by count descending. Keep examples brief (under 40 chars each).
+"""}]
+    )
+
+    clusters = _safe_json_parse(response.content[0].text, "full re-cluster")
     print(f"✅ {len(clusters)} clusters.")
     return clusters
+
+
+def cluster_new_with_claude(new_requests, existing_clusters, existing_count):
+    """
+    Incremental clustering: only send NEW requests to Claude.
+    Claude assigns each to an existing cluster or creates a new one.
+    Old requests are never re-sent — existing clusters are updated in-place.
+    """
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    if not new_requests:
+        return existing_clusters
+
+    # New requests get IDs continuing from where existing ones left off
+    idea_list = "\n".join(
+        f'{existing_count + i + 1}. "{r["idea"]}" (from {r["teacher"]})'
+        for i, r in enumerate(new_requests)
+    )
+
+    cluster_summary = "\n".join(
+        f'- "{c["theme"]}" {c["emoji"]}'
+        for c in existing_clusters
+    ) or "(none yet — create clusters from scratch)"
+
+    print(f"\n🤖 Incrementally clustering {len(new_requests)} new request(s) with Claude...")
+
+    response = client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=1024,
+        messages=[{"role": "user", "content": f"""You are classifying new ESL activity requests for Cool English.
+
+EXISTING clusters (reuse these theme names exactly when a good match exists):
+{cluster_summary}
+
+NEW requests to classify:
+{idea_list}
+
+For each new request, assign it to the best existing cluster OR create a new one.
+Skip anything that is spam, a test, a support email, or not an ESL activity request.
+
+Return ONLY a JSON array, no markdown:
+[
+  {{"requestId": 5, "theme": "Grammar - Verb Tenses", "isNew": false}},
+  {{"requestId": 6, "theme": "Pronunciation", "emoji": "🗣️", "isNew": true}}
+]
+
+Rules:
+- isNew=false → use an exact theme name from the EXISTING list above
+- isNew=true → provide a brand new theme name AND an emoji
+- Omit spam/test/support requests entirely
+"""}]
+    )
+
+    assignments = _safe_json_parse(response.content[0].text, "incremental cluster")
+
+    # Mutable dict of existing clusters keyed by theme
+    clusters = {c["theme"]: dict(c) for c in existing_clusters}
+
+    for a in assignments:
+        req_idx = a["requestId"] - existing_count - 1  # 0-based index into new_requests
+        if req_idx < 0 or req_idx >= len(new_requests):
+            print(f"  ⚠️  Assignment requestId {a['requestId']} out of range, skipping.")
+            continue
+        req = new_requests[req_idx]
+        theme = a["theme"]
+
+        if a.get("isNew"):
+            clusters[theme] = {
+                "theme": theme,
+                "emoji": a.get("emoji", "❓"),
+                "count": 1,
+                "examples": [req["idea"][:50]],
+                "requestIds": [a["requestId"]],
+                "teachers": [req["teacher"]],
+            }
+            print(f"  🆕 New cluster: {theme}")
+        elif theme in clusters:
+            c = clusters[theme]
+            c["count"] += 1
+            c["requestIds"].append(a["requestId"])
+            if req["teacher"] not in c["teachers"]:
+                c["teachers"].append(req["teacher"])
+            if len(c.get("examples", [])) < 3:
+                c["examples"].append(req["idea"][:50])
+            print(f"  ➕ Added to '{theme}'")
+        else:
+            print(f"  ⚠️  Unknown theme '{theme}' — skipping.")
+
+    result = sorted(clusters.values(), key=lambda x: x["count"], reverse=True)
+    print(f"✅ {len(result)} clusters total.")
+    return result
 
 
 # ─── Persistence ──────────────────────────────────────────────────────────────
@@ -302,10 +408,13 @@ def main():
         print("✨ Nothing new.")
         return
 
-    clusters = cluster_with_claude(
-        all_requests if args.recluster else unique_new,
-        [] if args.recluster else existing_requests
-    )
+    if args.recluster:
+        # Full re-cluster: send everything, rebuild clusters from scratch
+        clusters = cluster_all_with_claude(all_requests)
+    else:
+        # Incremental: only classify new requests, merge into cached clusters
+        existing_clusters = existing_data.get("clusters", [])
+        clusters = cluster_new_with_claude(unique_new, existing_clusters, len(existing_requests))
 
     save_results(args.output, all_requests, clusters)
 
