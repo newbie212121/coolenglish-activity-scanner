@@ -1,35 +1,29 @@
 {
-  "last_updated": "2026-03-11T13:50:43.454908",
-  "total": 84,
+  "last_updated": "2026-03-12T10:07:34.183341",
+  "total": 87,
   "clusters": [
     {
-      "theme": "Grammar - Verb Tenses",
-      "emoji": "⏰",
+      "theme": "Business English",
+      "emoji": "💼",
       "count": 6,
       "examples": [
-        "verb to be",
-        "Present Perfect",
-        "simple past"
+        "Business English topics and vocab.",
+        "business",
+        "CAE"
       ],
       "requestIds": [
-        11,
-        13,
-        25,
-        3,
-        24,
-        40
+        17,
+        39,
+        43,
+        44
       ],
       "teachers": [
-        "info@onebyoneidiomas.com",
-        "rafadorn@gmail.com",
-        "profluisacardosola@gmail.com",
-        "katijuventus@gmail.com",
-        "paranelsoncarvalho@gmail.com",
-        "claudia.eusebio@hotmail.com"
+        "fmarruda@gmail.com",
+        "fluentwithchris@gmail.com"
       ]
     },
     {
-      "theme": "Travel & Transportation",
+      "theme": "Travel & Airport",
       "emoji": "✈️",
       "count": 5,
       "examples": [
@@ -42,7 +36,8 @@
         31,
         45,
         47,
-        75
+        75,
+        81
       ],
       "teachers": [
         "smartonenglishschool@gmail.com",
@@ -52,40 +47,41 @@
       ]
     },
     {
-      "theme": "Business English",
-      "emoji": "💼",
-      "count": 5,
+      "theme": "Grammar - Basic Structures",
+      "emoji": "📝",
+      "count": 4,
       "examples": [
-        "Business English topics and vocab.",
-        "business",
-        "CAE"
+        "there is",
+        "verb to be",
+        "to and for activity"
       ],
       "requestIds": [
-        17,
-        39,
-        43,
-        44,
-        79
+        3,
+        11,
+        34
       ],
       "teachers": [
-        "fmarruda@gmail.com",
-        "fluentwithchris@gmail.com"
+        "katijuventus@gmail.com",
+        "info@onebyoneidiomas.com",
+        "symbolidiomas@gmail.com"
       ]
     },
     {
-      "theme": "Game Activities",
-      "emoji": "🎮",
+      "theme": "Game Show Activities",
+      "emoji": "🎯",
       "count": 4,
       "examples": [
         "jeopardy",
-        "Heads Up where one member describes",
-        "Who wants to be a millionnaire"
+        "Heads Up where one member describes"
       ],
       "requestIds": [
         6,
         9,
         12,
-        64
+        64,
+        65,
+        69,
+        71
       ],
       "teachers": [
         "livenupidiomas@gmail.com",
@@ -94,28 +90,7 @@
       ]
     },
     {
-      "theme": "Basic Vocabulary & Fundamentals",
-      "emoji": "🔤",
-      "count": 4,
-      "examples": [
-        "the alphabet",
-        "alphabet",
-        "good morning"
-      ],
-      "requestIds": [
-        22,
-        23,
-        4,
-        18
-      ],
-      "teachers": [
-        "teacherlilianrodrigues@gmail.com",
-        "roseanemedeiros9@gmail.com",
-        "angelika.skotnicka@gmail.com"
-      ]
-    },
-    {
-      "theme": "Medical & Health",
+      "theme": "Medical & Doctor Visits",
       "emoji": "🏥",
       "count": 3,
       "examples": [
@@ -133,98 +108,44 @@
       ]
     },
     {
-      "theme": "Grammar - Word Formation",
-      "emoji": "🔧",
+      "theme": "Grammar - Verb Tenses",
+      "emoji": "⏰",
       "count": 3,
       "examples": [
-        "phrasal",
-        "SUFFIXES",
-        "relative pronoun"
+        "Present Perfect",
+        "simple past",
+        "past perfect"
       ],
       "requestIds": [
-        1,
-        10,
-        5
+        13,
+        24,
+        25
       ],
       "teachers": [
-        "ihealthshop@gmail.com",
-        "teacher.recampolina@gmail.com",
-        "info@onebyoneidiomas.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Parts of Speech",
-      "emoji": "📝",
-      "count": 3,
-      "examples": [
-        "Adjectives",
-        "action verb game",
-        "possessive adjectives and personal pronouns"
-      ],
-      "requestIds": [
-        16,
-        8,
-        37
-      ],
-      "teachers": [
-        "profluisacardosola@gmail.com",
-        "tutoranita.english@gmail.com",
-        "agbrites@gmail.com"
-      ]
-    },
-    {
-      "theme": "Entertainment & Media",
-      "emoji": "🎬",
-      "count": 3,
-      "examples": [
-        "memes",
-        "movie vocabulary"
-      ],
-      "requestIds": [
-        2,
-        32,
-        33
-      ],
-      "teachers": [
-        "sfreiretorres@gmail.com",
-        "teacheralek.123@gmail.com"
-      ]
-    },
-    {
-      "theme": "Body & Physical",
-      "emoji": "👤",
-      "count": 2,
-      "examples": [
-        "body parts",
-        "d'arce brazilian jiu-jitsu submission"
-      ],
-      "requestIds": [
-        21,
-        49
-      ],
-      "teachers": [
+        "rafadorn@gmail.com",
         "paranelsoncarvalho@gmail.com",
-        "ansonswh@protonmail.ch"
+        "profluisacardosola@gmail.com"
       ]
     },
     {
-      "theme": "Conversation & Daily Life",
-      "emoji": "💬",
-      "count": 2,
+      "theme": "Alphabet & Basic Letters",
+      "emoji": "🔤",
+      "count": 3,
       "examples": [
-        "Everyday English Dialogues"
+        "the alphabet",
+        "alphabet"
       ],
       "requestIds": [
-        35,
-        80
+        22,
+        23,
+        74
       ],
       "teachers": [
-        "smartonenglishschool@gmail.com",
-        "fluentwithchris@gmail.com"
+        "teacherlilianrodrigues@gmail.com"
       ]
     },
     {
-      "theme": "Food & Children Activities",
+      "theme": "Vocabulary - Food",
       "emoji": "🍎",
       "count": 1,
       "examples": [
@@ -238,89 +159,203 @@
       ]
     },
     {
-      "theme": "Specialized Vocabulary",
-      "emoji": "⚖️",
-      "count": 3,
+      "theme": "Grammar - Phrasal Verbs",
+      "emoji": "📚",
+      "count": 2,
       "examples": [
-        "agriculture",
-        "legal vocabulary",
-        "survive"
+        "phrasal",
+        "make"
       ],
       "requestIds": [
-        14,
-        30,
-        42
+        1,
+        15,
+        66,
+        72
       ],
       "teachers": [
-        "raphael.laceerda@gmail.com",
-        "agbrites@gmail.com",
-        "lupitacmlaw@gmail.com"
+        "ihealthshop@gmail.com",
+        "yasmingrava2002@gmail.com"
       ]
     },
     {
-      "theme": "Grammar - Prepositions & Conditionals",
-      "emoji": "🔗",
+      "theme": "Grammar - Adjectives & Pronouns",
+      "emoji": "🏷️",
+      "count": 3,
+      "examples": [
+        "Adjectives",
+        "relative pronoun",
+        "possessive adjectives and personal pronouns"
+      ],
+      "requestIds": [
+        5,
+        16,
+        37
+      ],
+      "teachers": [
+        "info@onebyoneidiomas.com",
+        "profluisacardosola@gmail.com",
+        "agbrites@gmail.com"
+      ]
+    },
+    {
+      "theme": "Body Parts",
+      "emoji": "👤",
+      "count": 1,
+      "examples": [
+        "body parts"
+      ],
+      "requestIds": [
+        21
+      ],
+      "teachers": [
+        "paranelsoncarvalho@gmail.com"
+      ]
+    },
+    {
+      "theme": "Time & Frequency",
+      "emoji": "🕐",
       "count": 2,
       "examples": [
-        "to and for activity",
+        "telling time",
+        "adverbs of frequency"
+      ],
+      "requestIds": [
+        18,
+        40
+      ],
+      "teachers": [
+        "angelika.skotnicka@gmail.com",
+        "claudia.eusebio@hotmail.com"
+      ]
+    },
+    {
+      "theme": "Entertainment & Media",
+      "emoji": "🎬",
+      "count": 3,
+      "examples": [
+        "memes",
+        "movie vocabulary"
+      ],
+      "requestIds": [
+        2,
+        32,
+        33,
+        67
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "teacheralek.123@gmail.com"
+      ]
+    },
+    {
+      "theme": "Word Formation",
+      "emoji": "🔧",
+      "count": 1,
+      "examples": [
+        "SUFFIXES"
+      ],
+      "requestIds": [
+        10,
+        70
+      ],
+      "teachers": [
+        "teacher.recampolina@gmail.com"
+      ]
+    },
+    {
+      "theme": "Legal Vocabulary",
+      "emoji": "⚖️",
+      "count": 1,
+      "examples": [
+        "legal vocabulary"
+      ],
+      "requestIds": [
+        30
+      ],
+      "teachers": [
+        "agbrites@gmail.com"
+      ]
+    },
+    {
+      "theme": "Action Verbs & Activities",
+      "emoji": "🏃",
+      "count": 1,
+      "examples": [
+        "action verb game"
+      ],
+      "requestIds": [
+        8
+      ],
+      "teachers": [
+        "tutoranita.english@gmail.com"
+      ]
+    },
+    {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 2,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues"
+      ],
+      "requestIds": [
+        4,
+        35
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com"
+      ]
+    },
+    {
+      "theme": "Specialized Topics",
+      "emoji": "🌾",
+      "count": 3,
+      "examples": [
+        "agriculture",
+        "survive",
+        "d'arce brazilian jiu-jitsu"
+      ],
+      "requestIds": [
+        14,
+        42,
+        49
+      ],
+      "teachers": [
+        "raphael.laceerda@gmail.com",
+        "lupitacmlaw@gmail.com",
+        "ansonswh@protonmail.ch"
+      ]
+    },
+    {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 1,
+      "examples": [
         "conditionals"
       ],
       "requestIds": [
-        34,
         38
       ],
       "teachers": [
-        "symbolidiomas@gmail.com",
         "jefferson.asrs@gmail.com"
       ]
     },
     {
-      "theme": "Miscellaneous",
-      "emoji": "❓",
-      "count": 3,
+      "theme": "Technology Tools",
+      "emoji": "💻",
+      "count": 2,
       "examples": [
-        "make",
-        "mstery",
-        "teleprompter"
+        "teleprompter",
+        "wordwall"
       ],
       "requestIds": [
-        15,
-        36,
-        29
+        29,
+        85
       ],
       "teachers": [
-        "yasmingrava2002@gmail.com",
-        "giselerezende@gmail.com",
-        "sergiovera13@hotmail.com"
-      ]
-    },
-    {
-      "theme": "System Issues & Non-Teaching",
-      "emoji": "⚠️",
-      "count": 11,
-      "examples": [
-        "23423433432",
-        "fxghdfghdfghdfgh",
-        "test 99"
-      ],
-      "requestIds": [
-        20,
-        26,
-        27,
-        28,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        82
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "i.michalkova@phgymnazium.cz",
-        "john@coolenglish.net",
-        "jt2128@gmail.com"
+        "sergiovera13@hotmail.com",
+        "micahammon@gmail.com"
       ]
     }
   ],
@@ -808,6 +843,21 @@
     {
       "teacher": "john@coolenglish.net",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: john@coolenglish.net Email: john@coolenglish.net Activity Idea: Activity Request from john@coolenglish.net: test 2 Submitted from the Cool English personalized homepage. Reply di",
+      "date": "unknown"
+    },
+    {
+      "teacher": "micahammon@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Micah Fagre Email: micahammon@gmail.com Activity Idea: Activity Request from micahammon@gmail.com: wordwall Submitted from the Cool English personalized homepage. Reply directly",
+      "date": "unknown"
+    },
+    {
+      "teacher": "john@coolenglish.net",
+      "idea": "COOL ENGLISH — ACTIVITY REQUEST SUMMARY  Date: 2026-03-11 Total requests on file: 84 TOP REQUESTED ACTIVITY THEMES:",
+      "date": "unknown"
+    },
+    {
+      "teacher": "john@coolenglish.net",
+      "idea": "COOL ENGLISH — ACTIVITY REQUEST SUMMARY  Date: 2026-03-11 Total requests on file: 84 TOP REQUESTED ACTIVITY THEMES:",
       "date": "unknown"
     }
   ]
