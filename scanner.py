@@ -200,7 +200,7 @@ def cluster_with_claude(requests_list, existing=None):
 
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
-        max_tokens=2000,
+        max_tokens=4096,
         messages=[{"role": "user", "content": f"""You are analyzing ESL teacher activity requests for a language learning website called Cool English.
 
 Here are ALL submitted activity requests:
@@ -216,15 +216,34 @@ For each cluster return:
 - requestIds: 1-based list of request numbers
 - teachers: unique teacher emails
 
-Return ONLY a JSON array, no markdown:
+Return ONLY a JSON array, no markdown, no trailing commas:
 [{{"theme":"...","emoji":"...","count":3,"examples":["..."],"requestIds":[1,2],"teachers":["..."]}}]
 
-Sort by count descending.
+Sort by count descending. Be concise in examples to keep the response short.
 """}]
     )
 
     text = response.content[0].text.strip().replace("```json","").replace("```","").strip()
-    clusters = json.loads(text)
+
+    # If response was truncated, attempt to salvage valid clusters up to the break point
+    try:
+        clusters = json.loads(text)
+    except json.JSONDecodeError as e:
+        print(f"⚠️  JSON parse error: {e}. Attempting to salvage partial response...")
+        # Truncate to last complete object and close the array
+        last_close = text.rfind("},")
+        if last_close == -1:
+            last_close = text.rfind("}")
+        if last_close != -1:
+            salvaged = text[:last_close + 1] + "]"
+            try:
+                clusters = json.loads(salvaged)
+                print(f"♻️  Salvaged {len(clusters)} clusters from partial response.")
+            except json.JSONDecodeError:
+                raise ValueError(f"Could not parse Claude's response even after salvage attempt.\nRaw text:\n{text[:500]}")
+        else:
+            raise ValueError(f"Claude returned unparseable response:\n{text[:500]}")
+
     print(f"✅ {len(clusters)} clusters.")
     return clusters
 
