@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-12T10:07:34.183341",
-  "total": 87,
+  "last_updated": "2026-03-15T07:05:24.748290",
+  "total": 88,
   "clusters": [
     {
       "theme": "Business English",
@@ -145,17 +145,82 @@
       ]
     },
     {
-      "theme": "Vocabulary - Food",
-      "emoji": "🍎",
-      "count": 1,
+      "theme": "Grammar - Adjectives & Pronouns",
+      "emoji": "🏷️",
+      "count": 3,
       "examples": [
-        "vocabulary game about food to 6-7 years old kids"
+        "Adjectives",
+        "relative pronoun",
+        "possessive adjectives and personal pronouns"
       ],
       "requestIds": [
-        48
+        5,
+        16,
+        37
       ],
       "teachers": [
-        "gitalks.english@gmail.com"
+        "info@onebyoneidiomas.com",
+        "profluisacardosola@gmail.com",
+        "agbrites@gmail.com"
+      ]
+    },
+    {
+      "theme": "Time & Frequency",
+      "emoji": "🕐",
+      "count": 3,
+      "examples": [
+        "telling time",
+        "adverbs of frequency",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        18,
+        40,
+        88
+      ],
+      "teachers": [
+        "angelika.skotnicka@gmail.com",
+        "claudia.eusebio@hotmail.com",
+        "sergiovera13@hotmail.com"
+      ]
+    },
+    {
+      "theme": "Entertainment & Media",
+      "emoji": "🎬",
+      "count": 3,
+      "examples": [
+        "memes",
+        "movie vocabulary"
+      ],
+      "requestIds": [
+        2,
+        32,
+        33,
+        67
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "teacheralek.123@gmail.com"
+      ]
+    },
+    {
+      "theme": "Specialized Topics",
+      "emoji": "🌾",
+      "count": 3,
+      "examples": [
+        "agriculture",
+        "survive",
+        "d'arce brazilian jiu-jitsu"
+      ],
+      "requestIds": [
+        14,
+        42,
+        49
+      ],
+      "teachers": [
+        "raphael.laceerda@gmail.com",
+        "lupitacmlaw@gmail.com",
+        "ansonswh@protonmail.ch"
       ]
     },
     {
@@ -178,23 +243,51 @@
       ]
     },
     {
-      "theme": "Grammar - Adjectives & Pronouns",
-      "emoji": "🏷️",
-      "count": 3,
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 2,
       "examples": [
-        "Adjectives",
-        "relative pronoun",
-        "possessive adjectives and personal pronouns"
+        "good morning",
+        "Everyday English Dialogues"
       ],
       "requestIds": [
-        5,
-        16,
-        37
+        4,
+        35
       ],
       "teachers": [
-        "info@onebyoneidiomas.com",
-        "profluisacardosola@gmail.com",
-        "agbrites@gmail.com"
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com"
+      ]
+    },
+    {
+      "theme": "Technology Tools",
+      "emoji": "💻",
+      "count": 2,
+      "examples": [
+        "teleprompter",
+        "wordwall"
+      ],
+      "requestIds": [
+        29,
+        85
+      ],
+      "teachers": [
+        "sergiovera13@hotmail.com",
+        "micahammon@gmail.com"
+      ]
+    },
+    {
+      "theme": "Vocabulary - Food",
+      "emoji": "🍎",
+      "count": 1,
+      "examples": [
+        "vocabulary game about food to 6-7 years old kids"
+      ],
+      "requestIds": [
+        48
+      ],
+      "teachers": [
+        "gitalks.english@gmail.com"
       ]
     },
     {
@@ -209,42 +302,6 @@
       ],
       "teachers": [
         "paranelsoncarvalho@gmail.com"
-      ]
-    },
-    {
-      "theme": "Time & Frequency",
-      "emoji": "🕐",
-      "count": 2,
-      "examples": [
-        "telling time",
-        "adverbs of frequency"
-      ],
-      "requestIds": [
-        18,
-        40
-      ],
-      "teachers": [
-        "angelika.skotnicka@gmail.com",
-        "claudia.eusebio@hotmail.com"
-      ]
-    },
-    {
-      "theme": "Entertainment & Media",
-      "emoji": "🎬",
-      "count": 3,
-      "examples": [
-        "memes",
-        "movie vocabulary"
-      ],
-      "requestIds": [
-        2,
-        32,
-        33,
-        67
-      ],
-      "teachers": [
-        "sfreiretorres@gmail.com",
-        "teacheralek.123@gmail.com"
       ]
     },
     {
@@ -291,43 +348,6 @@
       ]
     },
     {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 2,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues"
-      ],
-      "requestIds": [
-        4,
-        35
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com"
-      ]
-    },
-    {
-      "theme": "Specialized Topics",
-      "emoji": "🌾",
-      "count": 3,
-      "examples": [
-        "agriculture",
-        "survive",
-        "d'arce brazilian jiu-jitsu"
-      ],
-      "requestIds": [
-        14,
-        42,
-        49
-      ],
-      "teachers": [
-        "raphael.laceerda@gmail.com",
-        "lupitacmlaw@gmail.com",
-        "ansonswh@protonmail.ch"
-      ]
-    },
-    {
       "theme": "Advanced Grammar",
       "emoji": "🎓",
       "count": 1,
@@ -339,23 +359,6 @@
       ],
       "teachers": [
         "jefferson.asrs@gmail.com"
-      ]
-    },
-    {
-      "theme": "Technology Tools",
-      "emoji": "💻",
-      "count": 2,
-      "examples": [
-        "teleprompter",
-        "wordwall"
-      ],
-      "requestIds": [
-        29,
-        85
-      ],
-      "teachers": [
-        "sergiovera13@hotmail.com",
-        "micahammon@gmail.com"
       ]
     }
   ],
@@ -858,6 +861,11 @@
     {
       "teacher": "john@coolenglish.net",
       "idea": "COOL ENGLISH — ACTIVITY REQUEST SUMMARY  Date: 2026-03-11 Total requests on file: 84 TOP REQUESTED ACTIVITY THEMES:",
+      "date": "unknown"
+    },
+    {
+      "teacher": "sergiovera13@hotmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: sergio vera Email: sergiovera13@hotmail.com Activity Idea: Activity Request from sergiovera13@hotmail.com: time Submitted from the Cool English personalized homepage. Reply direc",
       "date": "unknown"
     }
   ]
