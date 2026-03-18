@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-17T07:12:00.367507",
-  "total": 90,
+  "last_updated": "2026-03-18T07:08:59.055466",
+  "total": 93,
   "clusters": [
     {
       "theme": "Business English",
@@ -228,6 +228,26 @@
       ]
     },
     {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 3,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        4,
+        35,
+        91
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "meggradomska@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Phrasal Verbs",
       "emoji": "📚",
       "count": 2,
@@ -244,23 +264,6 @@
       "teachers": [
         "ihealthshop@gmail.com",
         "yasmingrava2002@gmail.com"
-      ]
-    },
-    {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 2,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues"
-      ],
-      "requestIds": [
-        4,
-        35
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com"
       ]
     },
     {
@@ -283,15 +286,18 @@
     {
       "theme": "Vocabulary - Food",
       "emoji": "🍎",
-      "count": 1,
+      "count": 2,
       "examples": [
-        "vocabulary game about food to 6-7 years old kids"
+        "vocabulary game about food to 6-7 years old kids",
+        "💡 New Activity Request A member has submitted an a"
       ],
       "requestIds": [
-        48
+        48,
+        92
       ],
       "teachers": [
-        "gitalks.english@gmail.com"
+        "gitalks.english@gmail.com",
+        "annaronky@gmail.com"
       ]
     },
     {
@@ -363,6 +369,20 @@
       ],
       "teachers": [
         "jefferson.asrs@gmail.com"
+      ]
+    },
+    {
+      "theme": "Cultural Celebrations",
+      "emoji": "🎉",
+      "count": 1,
+      "examples": [
+        "st patrick"
+      ],
+      "requestIds": [
+        93
+      ],
+      "teachers": [
+        "lisi.basso@gmail.com"
       ]
     }
   ],
@@ -880,6 +900,21 @@
     {
       "teacher": "rusiko.rapava@gmail.com",
       "idea": "possessive",
+      "date": "unknown"
+    },
+    {
+      "teacher": "meggradomska@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Megg Radomska Email: meggradomska@gmail.com Activity Idea: Activity Request from meggradomska@gmail.com: settings Submitted from the Cool English personalized homepage. Reply dir",
+      "date": "unknown"
+    },
+    {
+      "teacher": "annaronky@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Anna Rönky Email: annaronky@gmail.com Activity Idea: Activity Request from annaronky@gmail.com: food Submitted from the Cool English personalized homepage. Reply directly to resp",
+      "date": "unknown"
+    },
+    {
+      "teacher": "lisi.basso@gmail.com",
+      "idea": "st patrick",
       "date": "unknown"
     }
   ]
