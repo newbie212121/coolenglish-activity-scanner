@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-18T07:08:59.055466",
-  "total": 93,
+  "last_updated": "2026-03-19T07:04:44.801519",
+  "total": 95,
   "clusters": [
     {
       "theme": "Business English",
@@ -47,6 +47,32 @@
       ]
     },
     {
+      "theme": "Game Show Activities",
+      "emoji": "🎯",
+      "count": 5,
+      "examples": [
+        "jeopardy",
+        "Heads Up where one member describes",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        6,
+        9,
+        12,
+        64,
+        65,
+        69,
+        71,
+        95
+      ],
+      "teachers": [
+        "livenupidiomas@gmail.com",
+        "michelsantos.teacher@gmail.com",
+        "jagibbs1@hotmail.com",
+        "student.alinekrahl@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Basic Structures",
       "emoji": "📝",
       "count": 4,
@@ -64,29 +90,6 @@
         "katijuventus@gmail.com",
         "info@onebyoneidiomas.com",
         "symbolidiomas@gmail.com"
-      ]
-    },
-    {
-      "theme": "Game Show Activities",
-      "emoji": "🎯",
-      "count": 4,
-      "examples": [
-        "jeopardy",
-        "Heads Up where one member describes"
-      ],
-      "requestIds": [
-        6,
-        9,
-        12,
-        64,
-        65,
-        69,
-        71
-      ],
-      "teachers": [
-        "livenupidiomas@gmail.com",
-        "michelsantos.teacher@gmail.com",
-        "jagibbs1@hotmail.com"
       ]
     },
     {
@@ -301,6 +304,23 @@
       ]
     },
     {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 2,
+      "examples": [
+        "conditionals",
+        "quatifiers"
+      ],
+      "requestIds": [
+        38,
+        94
+      ],
+      "teachers": [
+        "jefferson.asrs@gmail.com",
+        "aulasmaterialgirl@gmail.com"
+      ]
+    },
+    {
       "theme": "Body Parts",
       "emoji": "👤",
       "count": 1,
@@ -355,20 +375,6 @@
       ],
       "teachers": [
         "tutoranita.english@gmail.com"
-      ]
-    },
-    {
-      "theme": "Advanced Grammar",
-      "emoji": "🎓",
-      "count": 1,
-      "examples": [
-        "conditionals"
-      ],
-      "requestIds": [
-        38
-      ],
-      "teachers": [
-        "jefferson.asrs@gmail.com"
       ]
     },
     {
@@ -915,6 +921,16 @@
     {
       "teacher": "lisi.basso@gmail.com",
       "idea": "st patrick",
+      "date": "unknown"
+    },
+    {
+      "teacher": "aulasmaterialgirl@gmail.com",
+      "idea": "quatifiers",
+      "date": "unknown"
+    },
+    {
+      "teacher": "student.alinekrahl@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Aline Krahl Email: student.alinekrahl@gmail.com Activity Idea: Activity Request from student.alinekrahl@gmail.com: taboo Submitted from the Cool English personalized homepage. Re",
       "date": "unknown"
     }
   ]
