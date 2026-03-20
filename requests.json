@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-19T07:04:44.801519",
-  "total": 95,
+  "last_updated": "2026-03-20T07:03:14.294795",
+  "total": 100,
   "clusters": [
     {
       "theme": "Business English",
@@ -73,6 +73,29 @@
       ]
     },
     {
+      "theme": "Grammar - Adjectives & Pronouns",
+      "emoji": "🏷️",
+      "count": 5,
+      "examples": [
+        "Adjectives",
+        "relative pronoun",
+        "possessive adjectives and personal pronouns"
+      ],
+      "requestIds": [
+        5,
+        16,
+        37,
+        90,
+        100
+      ],
+      "teachers": [
+        "info@onebyoneidiomas.com",
+        "profluisacardosola@gmail.com",
+        "agbrites@gmail.com",
+        "rusiko.rapava@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Basic Structures",
       "emoji": "📝",
       "count": 4,
@@ -90,28 +113,6 @@
         "katijuventus@gmail.com",
         "info@onebyoneidiomas.com",
         "symbolidiomas@gmail.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Adjectives & Pronouns",
-      "emoji": "🏷️",
-      "count": 4,
-      "examples": [
-        "Adjectives",
-        "relative pronoun",
-        "possessive adjectives and personal pronouns"
-      ],
-      "requestIds": [
-        5,
-        16,
-        37,
-        90
-      ],
-      "teachers": [
-        "info@onebyoneidiomas.com",
-        "profluisacardosola@gmail.com",
-        "agbrites@gmail.com",
-        "rusiko.rapava@gmail.com"
       ]
     },
     {
@@ -134,6 +135,28 @@
         "lupitacmlaw@gmail.com",
         "ansonswh@protonmail.ch",
         "valbarran@dist113.org"
+      ]
+    },
+    {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 4,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        4,
+        35,
+        91,
+        98
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "meggradomska@gmail.com",
+        "student.alinekrahl@gmail.com"
       ]
     },
     {
@@ -228,26 +251,6 @@
       "teachers": [
         "sfreiretorres@gmail.com",
         "teacheralek.123@gmail.com"
-      ]
-    },
-    {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 3,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        4,
-        35,
-        91
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com",
-        "meggradomska@gmail.com"
       ]
     },
     {
@@ -389,6 +392,34 @@
       ],
       "teachers": [
         "lisi.basso@gmail.com"
+      ]
+    },
+    {
+      "theme": "Vocabulary - Clothing",
+      "emoji": "👕",
+      "count": 1,
+      "examples": [
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        96
+      ],
+      "teachers": [
+        "stefania.paone@centroeuropeo.it"
+      ]
+    },
+    {
+      "theme": "Vocabulary - Jobs & Professions",
+      "emoji": "👨‍💼",
+      "count": 1,
+      "examples": [
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        97
+      ],
+      "teachers": [
+        "marlisetezza@gmail.com"
       ]
     }
   ],
@@ -931,6 +962,31 @@
     {
       "teacher": "student.alinekrahl@gmail.com",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: Aline Krahl Email: student.alinekrahl@gmail.com Activity Idea: Activity Request from student.alinekrahl@gmail.com: taboo Submitted from the Cool English personalized homepage. Re",
+      "date": "unknown"
+    },
+    {
+      "teacher": "stefania.paone@centroeuropeo.it",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Stefania Paone Email: stefania.paone@centroeuropeo.it Activity Idea: Activity Request from stefania.paone@centroeuropeo.it: clothes Submitted from the Cool English personalized h",
+      "date": "unknown"
+    },
+    {
+      "teacher": "marlisetezza@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Marlise Tezza Email: marlisetezza@gmail.com Activity Idea: Activity Request from marlisetezza@gmail.com: jobs Submitted from the Cool English personalized homepage. Reply directl",
+      "date": "unknown"
+    },
+    {
+      "teacher": "student.alinekrahl@gmail.com",
+      "idea": "Conversation topics on the expression I don't mind",
+      "date": "unknown"
+    },
+    {
+      "teacher": "angelika.skotnicka@gmail.com",
+      "idea": "continuation",
+      "date": "unknown"
+    },
+    {
+      "teacher": "profluisacardosola@gmail.com",
+      "idea": "subject pronouns",
       "date": "unknown"
     }
   ]
