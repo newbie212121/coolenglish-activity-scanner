@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-20T07:03:14.294795",
-  "total": 100,
+  "last_updated": "2026-03-21T06:53:13.779554",
+  "total": 102,
   "clusters": [
     {
       "theme": "Business English",
@@ -98,7 +98,7 @@
     {
       "theme": "Grammar - Basic Structures",
       "emoji": "📝",
-      "count": 4,
+      "count": 5,
       "examples": [
         "there is",
         "verb to be",
@@ -107,12 +107,14 @@
       "requestIds": [
         3,
         11,
-        34
+        34,
+        101
       ],
       "teachers": [
         "katijuventus@gmail.com",
         "info@onebyoneidiomas.com",
-        "symbolidiomas@gmail.com"
+        "symbolidiomas@gmail.com",
+        "sfreiretorres@gmail.com"
       ]
     },
     {
@@ -254,6 +256,26 @@
       ]
     },
     {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 3,
+      "examples": [
+        "conditionals",
+        "quatifiers",
+        "So (adjective) that and such (noun phrase) that st"
+      ],
+      "requestIds": [
+        38,
+        94,
+        102
+      ],
+      "teachers": [
+        "jefferson.asrs@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "daviesmic98@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Phrasal Verbs",
       "emoji": "📚",
       "count": 2,
@@ -304,23 +326,6 @@
       "teachers": [
         "gitalks.english@gmail.com",
         "annaronky@gmail.com"
-      ]
-    },
-    {
-      "theme": "Advanced Grammar",
-      "emoji": "🎓",
-      "count": 2,
-      "examples": [
-        "conditionals",
-        "quatifiers"
-      ],
-      "requestIds": [
-        38,
-        94
-      ],
-      "teachers": [
-        "jefferson.asrs@gmail.com",
-        "aulasmaterialgirl@gmail.com"
       ]
     },
     {
@@ -987,6 +992,16 @@
     {
       "teacher": "profluisacardosola@gmail.com",
       "idea": "subject pronouns",
+      "date": "unknown"
+    },
+    {
+      "teacher": "sfreiretorres@gmail.com",
+      "idea": "some any no",
+      "date": "unknown"
+    },
+    {
+      "teacher": "daviesmic98@gmail.com",
+      "idea": "So (adjective) that and such (noun phrase) that structure",
       "date": "unknown"
     }
   ]
