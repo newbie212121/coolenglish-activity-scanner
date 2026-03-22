@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-21T06:53:13.779554",
-  "total": 102,
+  "last_updated": "2026-03-22T06:58:47.802630",
+  "total": 105,
   "clusters": [
     {
       "theme": "Business English",
@@ -20,6 +20,58 @@
       "teachers": [
         "fmarruda@gmail.com",
         "fluentwithchris@gmail.com"
+      ]
+    },
+    {
+      "theme": "Game Show Activities",
+      "emoji": "🎯",
+      "count": 6,
+      "examples": [
+        "jeopardy",
+        "Heads Up where one member describes",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        6,
+        9,
+        12,
+        64,
+        65,
+        69,
+        71,
+        95,
+        104
+      ],
+      "teachers": [
+        "livenupidiomas@gmail.com",
+        "michelsantos.teacher@gmail.com",
+        "jagibbs1@hotmail.com",
+        "student.alinekrahl@gmail.com",
+        "carlagdubs@gmail.com"
+      ]
+    },
+    {
+      "theme": "Grammar - Basic Structures",
+      "emoji": "📝",
+      "count": 6,
+      "examples": [
+        "there is",
+        "verb to be",
+        "to and for activity"
+      ],
+      "requestIds": [
+        3,
+        11,
+        34,
+        101,
+        103
+      ],
+      "teachers": [
+        "katijuventus@gmail.com",
+        "info@onebyoneidiomas.com",
+        "symbolidiomas@gmail.com",
+        "sfreiretorres@gmail.com",
+        "cleytonsantosm@gmail.com"
       ]
     },
     {
@@ -47,32 +99,6 @@
       ]
     },
     {
-      "theme": "Game Show Activities",
-      "emoji": "🎯",
-      "count": 5,
-      "examples": [
-        "jeopardy",
-        "Heads Up where one member describes",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        6,
-        9,
-        12,
-        64,
-        65,
-        69,
-        71,
-        95
-      ],
-      "teachers": [
-        "livenupidiomas@gmail.com",
-        "michelsantos.teacher@gmail.com",
-        "jagibbs1@hotmail.com",
-        "student.alinekrahl@gmail.com"
-      ]
-    },
-    {
       "theme": "Grammar - Adjectives & Pronouns",
       "emoji": "🏷️",
       "count": 5,
@@ -93,28 +119,6 @@
         "profluisacardosola@gmail.com",
         "agbrites@gmail.com",
         "rusiko.rapava@gmail.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Basic Structures",
-      "emoji": "📝",
-      "count": 5,
-      "examples": [
-        "there is",
-        "verb to be",
-        "to and for activity"
-      ],
-      "requestIds": [
-        3,
-        11,
-        34,
-        101
-      ],
-      "teachers": [
-        "katijuventus@gmail.com",
-        "info@onebyoneidiomas.com",
-        "symbolidiomas@gmail.com",
-        "sfreiretorres@gmail.com"
       ]
     },
     {
@@ -425,6 +429,20 @@
       ],
       "teachers": [
         "marlisetezza@gmail.com"
+      ]
+    },
+    {
+      "theme": "Animals",
+      "emoji": "🐾",
+      "count": 1,
+      "examples": [
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        105
+      ],
+      "teachers": [
+        "fabianmantilla277@gmail.com"
       ]
     }
   ],
@@ -1002,6 +1020,21 @@
     {
       "teacher": "daviesmic98@gmail.com",
       "idea": "So (adjective) that and such (noun phrase) that structure",
+      "date": "unknown"
+    },
+    {
+      "teacher": "cleytonsantosm@gmail.com",
+      "idea": "I would like a combo of activities that includes: learn, multiple choice, etc with Imperatives",
+      "date": "unknown"
+    },
+    {
+      "teacher": "carlagdubs@gmail.com",
+      "idea": "get a magic word",
+      "date": "unknown"
+    },
+    {
+      "teacher": "fabianmantilla277@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Fabian Mantilla Email: fabianmantilla277@gmail.com Activity Idea: Activity Request from fabianmantilla277@gmail.com: animals Submitted from the Cool English personalized homepage",
       "date": "unknown"
     }
   ]
