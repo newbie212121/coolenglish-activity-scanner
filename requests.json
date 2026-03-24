@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-03-23T07:18:51.187040",
-  "total": 106,
+  "last_updated": "2026-03-24T07:12:07.991263",
+  "total": 115,
   "clusters": [
+    {
+      "theme": "Grammar - Basic Structures",
+      "emoji": "📝",
+      "count": 7,
+      "examples": [
+        "there is",
+        "verb to be",
+        "to and for activity"
+      ],
+      "requestIds": [
+        3,
+        11,
+        34,
+        101,
+        103,
+        107
+      ],
+      "teachers": [
+        "katijuventus@gmail.com",
+        "info@onebyoneidiomas.com",
+        "symbolidiomas@gmail.com",
+        "sfreiretorres@gmail.com",
+        "cleytonsantosm@gmail.com",
+        "teacherpaulamaria@gmail.com"
+      ]
+    },
     {
       "theme": "Business English",
       "emoji": "💼",
@@ -48,30 +74,6 @@
         "jagibbs1@hotmail.com",
         "student.alinekrahl@gmail.com",
         "carlagdubs@gmail.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Basic Structures",
-      "emoji": "📝",
-      "count": 6,
-      "examples": [
-        "there is",
-        "verb to be",
-        "to and for activity"
-      ],
-      "requestIds": [
-        3,
-        11,
-        34,
-        101,
-        103
-      ],
-      "teachers": [
-        "katijuventus@gmail.com",
-        "info@onebyoneidiomas.com",
-        "symbolidiomas@gmail.com",
-        "sfreiretorres@gmail.com",
-        "cleytonsantosm@gmail.com"
       ]
     },
     {
@@ -122,6 +124,54 @@
       ]
     },
     {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 5,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        4,
+        35,
+        91,
+        98,
+        112
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "meggradomska@gmail.com",
+        "student.alinekrahl@gmail.com",
+        "teacherisadorasantosbernardes@gmail.com"
+      ]
+    },
+    {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 5,
+      "examples": [
+        "conditionals",
+        "quatifiers",
+        "So (adjective) that and such (noun phrase) that st"
+      ],
+      "requestIds": [
+        38,
+        94,
+        102,
+        108,
+        114
+      ],
+      "teachers": [
+        "jefferson.asrs@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "daviesmic98@gmail.com",
+        "profluisacardosola@gmail.com",
+        "tc1@youduka.com"
+      ]
+    },
+    {
       "theme": "Specialized Topics",
       "emoji": "🌾",
       "count": 4,
@@ -141,28 +191,6 @@
         "lupitacmlaw@gmail.com",
         "ansonswh@protonmail.ch",
         "valbarran@dist113.org"
-      ]
-    },
-    {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 4,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        4,
-        35,
-        91,
-        98
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com",
-        "meggradomska@gmail.com",
-        "student.alinekrahl@gmail.com"
       ]
     },
     {
@@ -186,6 +214,28 @@
       ]
     },
     {
+      "theme": "Grammar - Verb Tenses",
+      "emoji": "⏰",
+      "count": 4,
+      "examples": [
+        "Present Perfect",
+        "simple past",
+        "past perfect"
+      ],
+      "requestIds": [
+        13,
+        24,
+        25,
+        110
+      ],
+      "teachers": [
+        "rafadorn@gmail.com",
+        "paranelsoncarvalho@gmail.com",
+        "profluisacardosola@gmail.com",
+        "joanaespinosa@gmail.com"
+      ]
+    },
+    {
       "theme": "Medical & Doctor Visits",
       "emoji": "🏥",
       "count": 3,
@@ -201,26 +251,6 @@
       "teachers": [
         "itsfernandateacher@gmail.com",
         "michelle@interfaithrise.org"
-      ]
-    },
-    {
-      "theme": "Grammar - Verb Tenses",
-      "emoji": "⏰",
-      "count": 3,
-      "examples": [
-        "Present Perfect",
-        "simple past",
-        "past perfect"
-      ],
-      "requestIds": [
-        13,
-        24,
-        25
-      ],
-      "teachers": [
-        "rafadorn@gmail.com",
-        "paranelsoncarvalho@gmail.com",
-        "profluisacardosola@gmail.com"
       ]
     },
     {
@@ -260,26 +290,6 @@
       "teachers": [
         "sfreiretorres@gmail.com",
         "teacheralek.123@gmail.com"
-      ]
-    },
-    {
-      "theme": "Advanced Grammar",
-      "emoji": "🎓",
-      "count": 3,
-      "examples": [
-        "conditionals",
-        "quatifiers",
-        "So (adjective) that and such (noun phrase) that st"
-      ],
-      "requestIds": [
-        38,
-        94,
-        102
-      ],
-      "teachers": [
-        "jefferson.asrs@gmail.com",
-        "aulasmaterialgirl@gmail.com",
-        "daviesmic98@gmail.com"
       ]
     },
     {
@@ -336,6 +346,40 @@
       ]
     },
     {
+      "theme": "Action Verbs & Activities",
+      "emoji": "🏃",
+      "count": 2,
+      "examples": [
+        "action verb game",
+        "more of those basic verbs activities (they are per"
+      ],
+      "requestIds": [
+        8,
+        111
+      ],
+      "teachers": [
+        "tutoranita.english@gmail.com",
+        "julianapdl@gmail.com"
+      ]
+    },
+    {
+      "theme": "Vocabulary - Clothing",
+      "emoji": "👕",
+      "count": 2,
+      "examples": [
+        "💡 New Activity Request A member has submitted an a",
+        "uma atividade que os alunos pudessem descrever as "
+      ],
+      "requestIds": [
+        96,
+        115
+      ],
+      "teachers": [
+        "stefania.paone@centroeuropeo.it",
+        "lisi.basso@gmail.com"
+      ]
+    },
+    {
       "theme": "Body Parts",
       "emoji": "👤",
       "count": 1,
@@ -379,20 +423,6 @@
       ]
     },
     {
-      "theme": "Action Verbs & Activities",
-      "emoji": "🏃",
-      "count": 1,
-      "examples": [
-        "action verb game"
-      ],
-      "requestIds": [
-        8
-      ],
-      "teachers": [
-        "tutoranita.english@gmail.com"
-      ]
-    },
-    {
       "theme": "Cultural Celebrations",
       "emoji": "🎉",
       "count": 1,
@@ -404,20 +434,6 @@
       ],
       "teachers": [
         "lisi.basso@gmail.com"
-      ]
-    },
-    {
-      "theme": "Vocabulary - Clothing",
-      "emoji": "👕",
-      "count": 1,
-      "examples": [
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        96
-      ],
-      "teachers": [
-        "stefania.paone@centroeuropeo.it"
       ]
     },
     {
@@ -1043,6 +1059,51 @@
     {
       "teacher": "roseanemedeiros9@gmail.com",
       "idea": "THE ALPHA",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacherpaulamaria@gmail.com",
+      "idea": "there is there are",
+      "date": "unknown"
+    },
+    {
+      "teacher": "profluisacardosola@gmail.com",
+      "idea": "prepositions of movement",
+      "date": "unknown"
+    },
+    {
+      "teacher": "joanaespinosa@gmail.com",
+      "idea": "sorry! I typed used to because I hought this was the 'search' bar!!",
+      "date": "unknown"
+    },
+    {
+      "teacher": "joanaespinosa@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: joanaespinosa@gmail.com Email: joanaespinosa@gmail.com Activity Idea: Activity Request from joanaespinosa@gmail.com: used to Submitted from the Cool English personalized homepage",
+      "date": "unknown"
+    },
+    {
+      "teacher": "julianapdl@gmail.com",
+      "idea": "more of those basic verbs activities (they are perfect), using different scenarios like jobs, health, routine, etc",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacherisadorasantosbernardes@gmail.com",
+      "idea": "guilty pleasure",
+      "date": "unknown"
+    },
+    {
+      "teacher": "surprisepills@gmail.com",
+      "idea": "picture Question : https://activities.coolenglish.org/pictures/Picture%20QA/Picture%20Q%26A%20-%201%20ce5%20 (Published)/index.html There are human hands on the cat. It has to be fixed.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "tc1@youduka.com",
+      "idea": "prepositional phrases",
+      "date": "unknown"
+    },
+    {
+      "teacher": "lisi.basso@gmail.com",
+      "idea": "uma atividade que os alunos pudessem descrever as roupas dos personagens e praticar present continuous",
       "date": "unknown"
     }
   ]
