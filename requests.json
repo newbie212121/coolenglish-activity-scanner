@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-25T07:09:46.407554",
-  "total": 116,
+  "last_updated": "2026-03-26T07:17:09.834720",
+  "total": 122,
   "clusters": [
     {
       "theme": "Grammar - Basic Structures",
@@ -172,6 +172,29 @@
       ]
     },
     {
+      "theme": "Entertainment & Media",
+      "emoji": "🎬",
+      "count": 5,
+      "examples": [
+        "memes",
+        "movie vocabulary",
+        "super bowl"
+      ],
+      "requestIds": [
+        2,
+        32,
+        33,
+        67,
+        117,
+        118
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "teacheralek.123@gmail.com",
+        "aulasmaterialgirl@gmail.com"
+      ]
+    },
+    {
       "theme": "Specialized Topics",
       "emoji": "🌾",
       "count": 4,
@@ -274,22 +297,23 @@
       ]
     },
     {
-      "theme": "Entertainment & Media",
-      "emoji": "🎬",
+      "theme": "Action Verbs & Activities",
+      "emoji": "🏃",
       "count": 3,
       "examples": [
-        "memes",
-        "movie vocabulary"
+        "action verb game",
+        "more of those basic verbs activities (they are per",
+        "basic verbs"
       ],
       "requestIds": [
-        2,
-        32,
-        33,
-        67
+        8,
+        111,
+        122
       ],
       "teachers": [
-        "sfreiretorres@gmail.com",
-        "teacheralek.123@gmail.com"
+        "tutoranita.english@gmail.com",
+        "julianapdl@gmail.com",
+        "luuimoreira@gmail.com"
       ]
     },
     {
@@ -343,23 +367,6 @@
       "teachers": [
         "gitalks.english@gmail.com",
         "annaronky@gmail.com"
-      ]
-    },
-    {
-      "theme": "Action Verbs & Activities",
-      "emoji": "🏃",
-      "count": 2,
-      "examples": [
-        "action verb game",
-        "more of those basic verbs activities (they are per"
-      ],
-      "requestIds": [
-        8,
-        111
-      ],
-      "teachers": [
-        "tutoranita.english@gmail.com",
-        "julianapdl@gmail.com"
       ]
     },
     {
@@ -476,6 +483,20 @@
       ],
       "teachers": [
         "kevin.pachalski@gmail.com"
+      ]
+    },
+    {
+      "theme": "Pronunciation & Phonics",
+      "emoji": "🗣️",
+      "count": 1,
+      "examples": [
+        "minimal pairs (ch / sh)"
+      ],
+      "requestIds": [
+        119
+      ],
+      "teachers": [
+        "julianapdl@gmail.com"
       ]
     }
   ],
@@ -1123,6 +1144,36 @@
     {
       "teacher": "kevin.pachalski@gmail.com",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: Kevin Pachalski Email: kevin.pachalski@gmail.com Activity Idea: Activity Request from kevin.pachalski@gmail.com: numbers Submitted from the Cool English personalized homepage. Re",
+      "date": "unknown"
+    },
+    {
+      "teacher": "aulasmaterialgirl@gmail.com",
+      "idea": "super bowl",
+      "date": "unknown"
+    },
+    {
+      "teacher": "aulasmaterialgirl@gmail.com",
+      "idea": "superbowl",
+      "date": "unknown"
+    },
+    {
+      "teacher": "julianapdl@gmail.com",
+      "idea": "minimal pairs (ch / sh)",
+      "date": "unknown"
+    },
+    {
+      "teacher": "timcintra@gmail.com",
+      "idea": "Activities that work for many levels are not good for beginner.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "timcintra@gmail.com",
+      "idea": "Activities that work for many levels are not good for beginner.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "luuimoreira@gmail.com",
+      "idea": "basic verbs",
       "date": "unknown"
     }
   ]
