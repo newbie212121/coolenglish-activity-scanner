@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-26T07:17:09.834720",
-  "total": 122,
+  "last_updated": "2026-03-27T07:16:29.567839",
+  "total": 125,
   "clusters": [
     {
       "theme": "Grammar - Basic Structures",
@@ -387,6 +387,40 @@
       ]
     },
     {
+      "theme": "Vocabulary - Jobs & Professions",
+      "emoji": "👨‍💼",
+      "count": 2,
+      "examples": [
+        "💡 New Activity Request A member has submitted an a",
+        "job interview"
+      ],
+      "requestIds": [
+        97,
+        123
+      ],
+      "teachers": [
+        "marlisetezza@gmail.com",
+        "adagadelha.efl@gmail.com"
+      ]
+    },
+    {
+      "theme": "Pronunciation & Phonics",
+      "emoji": "🗣️",
+      "count": 2,
+      "examples": [
+        "minimal pairs (ch / sh)",
+        "homophone"
+      ],
+      "requestIds": [
+        119,
+        124
+      ],
+      "teachers": [
+        "julianapdl@gmail.com",
+        "teacherisadorasantosbernardes@gmail.com"
+      ]
+    },
+    {
       "theme": "Body Parts",
       "emoji": "👤",
       "count": 1,
@@ -444,20 +478,6 @@
       ]
     },
     {
-      "theme": "Vocabulary - Jobs & Professions",
-      "emoji": "👨‍💼",
-      "count": 1,
-      "examples": [
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        97
-      ],
-      "teachers": [
-        "marlisetezza@gmail.com"
-      ]
-    },
-    {
       "theme": "Animals",
       "emoji": "🐾",
       "count": 1,
@@ -486,17 +506,17 @@
       ]
     },
     {
-      "theme": "Pronunciation & Phonics",
-      "emoji": "🗣️",
+      "theme": "Idioms & Expressions",
+      "emoji": "💭",
       "count": 1,
       "examples": [
-        "minimal pairs (ch / sh)"
+        "💡 New Activity Request A member has submitted an a"
       ],
       "requestIds": [
-        119
+        125
       ],
       "teachers": [
-        "julianapdl@gmail.com"
+        "araujotirza@gmail.com"
       ]
     }
   ],
@@ -1174,6 +1194,21 @@
     {
       "teacher": "luuimoreira@gmail.com",
       "idea": "basic verbs",
+      "date": "unknown"
+    },
+    {
+      "teacher": "adagadelha.efl@gmail.com",
+      "idea": "job interview",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacherisadorasantosbernardes@gmail.com",
+      "idea": "homophone",
+      "date": "unknown"
+    },
+    {
+      "teacher": "araujotirza@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: TIRZA AUFERIL Email: araujotirza@gmail.com Activity Idea: Activity Request from araujotirza@gmail.com: idioms Submitted from the Cool English personalized homepage. Reply directl",
       "date": "unknown"
     }
   ]
