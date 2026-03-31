@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-27T07:16:29.567839",
-  "total": 125,
+  "last_updated": "2026-03-31T07:24:04.457007",
+  "total": 128,
   "clusters": [
     {
       "theme": "Grammar - Basic Structures",
@@ -79,7 +79,7 @@
     {
       "theme": "Travel & Airport",
       "emoji": "✈️",
-      "count": 5,
+      "count": 6,
       "examples": [
         "airport",
         "travel",
@@ -91,13 +91,41 @@
         45,
         47,
         75,
-        81
+        81,
+        127
       ],
       "teachers": [
         "smartonenglishschool@gmail.com",
         "speakup.privateclasses@gmail.com",
         "profluisacardosola@gmail.com",
-        "gitalks.english@gmail.com"
+        "gitalks.english@gmail.com",
+        "isabelacarvalho17@gmail.com"
+      ]
+    },
+    {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 6,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        4,
+        35,
+        91,
+        98,
+        112,
+        126
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "meggradomska@gmail.com",
+        "student.alinekrahl@gmail.com",
+        "teacherisadorasantosbernardes@gmail.com",
+        "teacherpaulamaria@gmail.com"
       ]
     },
     {
@@ -121,30 +149,6 @@
         "profluisacardosola@gmail.com",
         "agbrites@gmail.com",
         "rusiko.rapava@gmail.com"
-      ]
-    },
-    {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 5,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        4,
-        35,
-        91,
-        98,
-        112
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com",
-        "meggradomska@gmail.com",
-        "student.alinekrahl@gmail.com",
-        "teacherisadorasantosbernardes@gmail.com"
       ]
     },
     {
@@ -317,6 +321,26 @@
       ]
     },
     {
+      "theme": "Vocabulary - Food",
+      "emoji": "🍎",
+      "count": 3,
+      "examples": [
+        "vocabulary game about food to 6-7 years old kids",
+        "💡 New Activity Request A member has submitted an a",
+        "cooking verbs in different tenses- peel, grate, cu"
+      ],
+      "requestIds": [
+        48,
+        92,
+        128
+      ],
+      "teachers": [
+        "gitalks.english@gmail.com",
+        "annaronky@gmail.com",
+        "awhite88keys@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Phrasal Verbs",
       "emoji": "📚",
       "count": 2,
@@ -350,23 +374,6 @@
       "teachers": [
         "sergiovera13@hotmail.com",
         "micahammon@gmail.com"
-      ]
-    },
-    {
-      "theme": "Vocabulary - Food",
-      "emoji": "🍎",
-      "count": 2,
-      "examples": [
-        "vocabulary game about food to 6-7 years old kids",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        48,
-        92
-      ],
-      "teachers": [
-        "gitalks.english@gmail.com",
-        "annaronky@gmail.com"
       ]
     },
     {
@@ -1209,6 +1216,21 @@
     {
       "teacher": "araujotirza@gmail.com",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: TIRZA AUFERIL Email: araujotirza@gmail.com Activity Idea: Activity Request from araujotirza@gmail.com: idioms Submitted from the Cool English personalized homepage. Reply directl",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacherpaulamaria@gmail.com",
+      "idea": "daily routines",
+      "date": "unknown"
+    },
+    {
+      "teacher": "isabelacarvalho17@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Isabela Carvalho Email: isabelacarvalho17@gmail.com Activity Idea: Activity Request from isabelacarvalho17@gmail.com: hotel Submitted from the Cool English personalized homepage.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "awhite88keys@gmail.com",
+      "idea": "cooking verbs in different tenses- peel, grate, cut, sieve, knead, slice, break an egg, boil, fry, scramble, stir, chop, dice, add",
       "date": "unknown"
     }
   ]
