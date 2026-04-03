@@ -1,7 +1,37 @@
 {
-  "last_updated": "2026-04-02T07:21:02.636127",
-  "total": 134,
+  "last_updated": "2026-04-03T07:17:54.276972",
+  "total": 136,
   "clusters": [
+    {
+      "theme": "Daily Conversations",
+      "emoji": "💬",
+      "count": 8,
+      "examples": [
+        "good morning",
+        "Everyday English Dialogues",
+        "💡 New Activity Request A member has submitted an a"
+      ],
+      "requestIds": [
+        4,
+        35,
+        91,
+        98,
+        112,
+        126,
+        135,
+        136
+      ],
+      "teachers": [
+        "roseanemedeiros9@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "meggradomska@gmail.com",
+        "student.alinekrahl@gmail.com",
+        "teacherisadorasantosbernardes@gmail.com",
+        "teacherpaulamaria@gmail.com",
+        "angelarenata_1@hotmail.com",
+        "fmarruda@gmail.com"
+      ]
+    },
     {
       "theme": "Grammar - Basic Structures",
       "emoji": "📝",
@@ -100,32 +130,6 @@
         "profluisacardosola@gmail.com",
         "gitalks.english@gmail.com",
         "isabelacarvalho17@gmail.com"
-      ]
-    },
-    {
-      "theme": "Daily Conversations",
-      "emoji": "💬",
-      "count": 6,
-      "examples": [
-        "good morning",
-        "Everyday English Dialogues",
-        "💡 New Activity Request A member has submitted an a"
-      ],
-      "requestIds": [
-        4,
-        35,
-        91,
-        98,
-        112,
-        126
-      ],
-      "teachers": [
-        "roseanemedeiros9@gmail.com",
-        "smartonenglishschool@gmail.com",
-        "meggradomska@gmail.com",
-        "student.alinekrahl@gmail.com",
-        "teacherisadorasantosbernardes@gmail.com",
-        "teacherpaulamaria@gmail.com"
       ]
     },
     {
@@ -1288,6 +1292,16 @@
     {
       "teacher": "smartonenglishschool@gmail.com",
       "idea": "Verb Tenses",
+      "date": "unknown"
+    },
+    {
+      "teacher": "angelarenata_1@hotmail.com",
+      "idea": "Good Evening! I'd like to request more speaking activities. The ones similar to the Role Plays you already have, it would be perfect. I'm so glad with the ones you have here.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "fmarruda@gmail.com",
+      "idea": "More everyday dialogues both business and general English",
       "date": "unknown"
     }
   ]
