@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-04T07:08:06.760244",
-  "total": 137,
+  "last_updated": "2026-04-05T07:15:01.123613",
+  "total": 138,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -135,6 +135,31 @@
       ]
     },
     {
+      "theme": "Entertainment & Media",
+      "emoji": "🎬",
+      "count": 6,
+      "examples": [
+        "memes",
+        "movie vocabulary",
+        "super bowl"
+      ],
+      "requestIds": [
+        2,
+        32,
+        33,
+        67,
+        117,
+        118,
+        138
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "teacheralek.123@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "charlenejoseph123@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Adjectives & Pronouns",
       "emoji": "🏷️",
       "count": 5,
@@ -179,29 +204,6 @@
         "daviesmic98@gmail.com",
         "profluisacardosola@gmail.com",
         "tc1@youduka.com"
-      ]
-    },
-    {
-      "theme": "Entertainment & Media",
-      "emoji": "🎬",
-      "count": 5,
-      "examples": [
-        "memes",
-        "movie vocabulary",
-        "super bowl"
-      ],
-      "requestIds": [
-        2,
-        32,
-        33,
-        67,
-        117,
-        118
-      ],
-      "teachers": [
-        "sfreiretorres@gmail.com",
-        "teacheralek.123@gmail.com",
-        "aulasmaterialgirl@gmail.com"
       ]
     },
     {
@@ -1309,6 +1311,11 @@
     {
       "teacher": "charlenejoseph123@gmail.com",
       "idea": "Please do more of those picture rails challenges. And there is a game where you have an image with numbers written out like - ten or seven. The words are in different colours. The challenge is to say the colour not the word.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "charlenejoseph123@gmail.com",
+      "idea": "Is it possible to do more video acting challenges. you tube or tik tok :)",
       "date": "unknown"
     }
   ]
