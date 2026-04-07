@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T07:15:01.123613",
-  "total": 138,
+  "last_updated": "2026-04-07T07:26:23.199010",
+  "total": 139,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -160,6 +160,32 @@
       ]
     },
     {
+      "theme": "Grammar - Verb Tenses",
+      "emoji": "⏰",
+      "count": 6,
+      "examples": [
+        "Present Perfect",
+        "simple past",
+        "past perfect"
+      ],
+      "requestIds": [
+        13,
+        24,
+        25,
+        110,
+        134,
+        139
+      ],
+      "teachers": [
+        "rafadorn@gmail.com",
+        "paranelsoncarvalho@gmail.com",
+        "profluisacardosola@gmail.com",
+        "joanaespinosa@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "sergiovera13@hotmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Adjectives & Pronouns",
       "emoji": "🏷️",
       "count": 5,
@@ -204,30 +230,6 @@
         "daviesmic98@gmail.com",
         "profluisacardosola@gmail.com",
         "tc1@youduka.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Verb Tenses",
-      "emoji": "⏰",
-      "count": 5,
-      "examples": [
-        "Present Perfect",
-        "simple past",
-        "past perfect"
-      ],
-      "requestIds": [
-        13,
-        24,
-        25,
-        110,
-        134
-      ],
-      "teachers": [
-        "rafadorn@gmail.com",
-        "paranelsoncarvalho@gmail.com",
-        "profluisacardosola@gmail.com",
-        "joanaespinosa@gmail.com",
-        "smartonenglishschool@gmail.com"
       ]
     },
     {
@@ -1316,6 +1318,11 @@
     {
       "teacher": "charlenejoseph123@gmail.com",
       "idea": "Is it possible to do more video acting challenges. you tube or tik tok :)",
+      "date": "unknown"
+    },
+    {
+      "teacher": "sergiovera13@hotmail.com",
+      "idea": "verb tense",
       "date": "unknown"
     }
   ]
