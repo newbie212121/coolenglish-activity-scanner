@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-07T07:26:23.199010",
-  "total": 139,
+  "last_updated": "2026-04-08T07:42:53.786091",
+  "total": 140,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -89,6 +89,34 @@
       ]
     },
     {
+      "theme": "Travel & Airport",
+      "emoji": "✈️",
+      "count": 7,
+      "examples": [
+        "airport",
+        "travel",
+        "at the airport A1 level"
+      ],
+      "requestIds": [
+        19,
+        31,
+        45,
+        47,
+        75,
+        81,
+        127,
+        140
+      ],
+      "teachers": [
+        "smartonenglishschool@gmail.com",
+        "speakup.privateclasses@gmail.com",
+        "profluisacardosola@gmail.com",
+        "gitalks.english@gmail.com",
+        "isabelacarvalho17@gmail.com",
+        "lena.reitblat@yahoo.com"
+      ]
+    },
+    {
       "theme": "Business English",
       "emoji": "💼",
       "count": 6,
@@ -106,32 +134,6 @@
       "teachers": [
         "fmarruda@gmail.com",
         "fluentwithchris@gmail.com"
-      ]
-    },
-    {
-      "theme": "Travel & Airport",
-      "emoji": "✈️",
-      "count": 6,
-      "examples": [
-        "airport",
-        "travel",
-        "at the airport A1 level"
-      ],
-      "requestIds": [
-        19,
-        31,
-        45,
-        47,
-        75,
-        81,
-        127
-      ],
-      "teachers": [
-        "smartonenglishschool@gmail.com",
-        "speakup.privateclasses@gmail.com",
-        "profluisacardosola@gmail.com",
-        "gitalks.english@gmail.com",
-        "isabelacarvalho17@gmail.com"
       ]
     },
     {
@@ -1323,6 +1325,11 @@
     {
       "teacher": "sergiovera13@hotmail.com",
       "idea": "verb tense",
+      "date": "unknown"
+    },
+    {
+      "teacher": "lena.reitblat@yahoo.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: lena.reitblat@yahoo.com Email: lena.reitblat@yahoo.com Activity Idea: Activity Request from lena.reitblat@yahoo.com: travel Submitted from the Cool English personalized homepage.",
       "date": "unknown"
     }
   ]
