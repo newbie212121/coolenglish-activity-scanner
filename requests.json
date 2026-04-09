@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-08T07:42:53.786091",
-  "total": 140,
+  "last_updated": "2026-04-09T07:45:15.231340",
+  "total": 141,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -188,6 +188,32 @@
       ]
     },
     {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 6,
+      "examples": [
+        "conditionals",
+        "quatifiers",
+        "So (adjective) that and such (noun phrase) that st"
+      ],
+      "requestIds": [
+        38,
+        94,
+        102,
+        108,
+        114,
+        141
+      ],
+      "teachers": [
+        "jefferson.asrs@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "daviesmic98@gmail.com",
+        "profluisacardosola@gmail.com",
+        "tc1@youduka.com",
+        "m.soledad.suares@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Adjectives & Pronouns",
       "emoji": "🏷️",
       "count": 5,
@@ -208,30 +234,6 @@
         "profluisacardosola@gmail.com",
         "agbrites@gmail.com",
         "rusiko.rapava@gmail.com"
-      ]
-    },
-    {
-      "theme": "Advanced Grammar",
-      "emoji": "🎓",
-      "count": 5,
-      "examples": [
-        "conditionals",
-        "quatifiers",
-        "So (adjective) that and such (noun phrase) that st"
-      ],
-      "requestIds": [
-        38,
-        94,
-        102,
-        108,
-        114
-      ],
-      "teachers": [
-        "jefferson.asrs@gmail.com",
-        "aulasmaterialgirl@gmail.com",
-        "daviesmic98@gmail.com",
-        "profluisacardosola@gmail.com",
-        "tc1@youduka.com"
       ]
     },
     {
@@ -1330,6 +1332,11 @@
     {
       "teacher": "lena.reitblat@yahoo.com",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: lena.reitblat@yahoo.com Email: lena.reitblat@yahoo.com Activity Idea: Activity Request from lena.reitblat@yahoo.com: travel Submitted from the Cool English personalized homepage.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "m.soledad.suares@gmail.com",
+      "idea": "sould have",
       "date": "unknown"
     }
   ]
