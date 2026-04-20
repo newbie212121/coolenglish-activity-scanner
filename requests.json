@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-14T07:55:58.916626",
-  "total": 142,
+  "last_updated": "2026-04-20T08:18:29.231796",
+  "total": 143,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -30,6 +30,36 @@
         "teacherpaulamaria@gmail.com",
         "angelarenata_1@hotmail.com",
         "fmarruda@gmail.com"
+      ]
+    },
+    {
+      "theme": "Travel & Airport",
+      "emoji": "✈️",
+      "count": 8,
+      "examples": [
+        "airport",
+        "travel",
+        "at the airport A1 level"
+      ],
+      "requestIds": [
+        19,
+        31,
+        45,
+        47,
+        75,
+        81,
+        127,
+        140,
+        143
+      ],
+      "teachers": [
+        "smartonenglishschool@gmail.com",
+        "speakup.privateclasses@gmail.com",
+        "profluisacardosola@gmail.com",
+        "gitalks.english@gmail.com",
+        "isabelacarvalho17@gmail.com",
+        "lena.reitblat@yahoo.com",
+        "evdoxia1st@gmail.com"
       ]
     },
     {
@@ -86,34 +116,6 @@
         "student.alinekrahl@gmail.com",
         "carlagdubs@gmail.com",
         "charlenejoseph123@gmail.com"
-      ]
-    },
-    {
-      "theme": "Travel & Airport",
-      "emoji": "✈️",
-      "count": 7,
-      "examples": [
-        "airport",
-        "travel",
-        "at the airport A1 level"
-      ],
-      "requestIds": [
-        19,
-        31,
-        45,
-        47,
-        75,
-        81,
-        127,
-        140
-      ],
-      "teachers": [
-        "smartonenglishschool@gmail.com",
-        "speakup.privateclasses@gmail.com",
-        "profluisacardosola@gmail.com",
-        "gitalks.english@gmail.com",
-        "isabelacarvalho17@gmail.com",
-        "lena.reitblat@yahoo.com"
       ]
     },
     {
@@ -1344,6 +1346,11 @@
     {
       "teacher": "angelika.skotnicka@gmail.com",
       "idea": "artemis mission - interviews",
+      "date": "unknown"
+    },
+    {
+      "teacher": "evdoxia1st@gmail.com",
+      "idea": "A game about giving directions and road signs.",
       "date": "unknown"
     }
   ]
