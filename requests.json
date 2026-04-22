@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-20T08:18:29.231796",
-  "total": 143,
+  "last_updated": "2026-04-22T07:57:44.611007",
+  "total": 145,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -569,6 +569,20 @@
       ],
       "teachers": [
         "m.soledad.suares@gmail.com"
+      ]
+    },
+    {
+      "theme": "Vocabulary - Toys & Play",
+      "emoji": "🧸",
+      "count": 1,
+      "examples": [
+        "It would be nice to have more activities for kids,"
+      ],
+      "requestIds": [
+        145
+      ],
+      "teachers": [
+        "schooltutorsonline@gmail.com"
       ]
     }
   ],
@@ -1351,6 +1365,16 @@
     {
       "teacher": "evdoxia1st@gmail.com",
       "idea": "A game about giving directions and road signs.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "mirthess.alves@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Mirthes Alves Email: mirthess.alves@gmail.com Activity Idea: Hey, good evening! Besides paying to use all the activities, most of them are locked for me. What changed? Don&#39;t I",
+      "date": "unknown"
+    },
+    {
+      "teacher": "schooltutorsonline@gmail.com",
+      "idea": "It would be nice to have more activities for kids, e.g. about toys",
       "date": "unknown"
     }
   ]
