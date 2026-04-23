@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-22T07:57:44.611007",
-  "total": 145,
+  "last_updated": "2026-04-23T08:03:57.084925",
+  "total": 146,
   "clusters": [
     {
       "theme": "Daily Conversations",
       "emoji": "💬",
-      "count": 8,
+      "count": 9,
       "examples": [
         "good morning",
         "Everyday English Dialogues",
@@ -19,7 +19,8 @@
         112,
         126,
         135,
-        136
+        136,
+        146
       ],
       "teachers": [
         "roseanemedeiros9@gmail.com",
@@ -29,7 +30,8 @@
         "teacherisadorasantosbernardes@gmail.com",
         "teacherpaulamaria@gmail.com",
         "angelarenata_1@hotmail.com",
-        "fmarruda@gmail.com"
+        "fmarruda@gmail.com",
+        "speakup.privateclasses@gmail.com"
       ]
     },
     {
@@ -1375,6 +1377,11 @@
     {
       "teacher": "schooltutorsonline@gmail.com",
       "idea": "It would be nice to have more activities for kids, e.g. about toys",
+      "date": "unknown"
+    },
+    {
+      "teacher": "speakup.privateclasses@gmail.com",
+      "idea": "introduction",
       "date": "unknown"
     }
   ]
