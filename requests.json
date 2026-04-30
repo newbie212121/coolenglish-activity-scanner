@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-24T08:12:15.670315",
-  "total": 147,
+  "last_updated": "2026-04-30T08:28:32.373406",
+  "total": 150,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -218,6 +218,32 @@
       ]
     },
     {
+      "theme": "Specialized Topics",
+      "emoji": "🌾",
+      "count": 6,
+      "examples": [
+        "agriculture",
+        "survive",
+        "d'arce brazilian jiu-jitsu"
+      ],
+      "requestIds": [
+        14,
+        42,
+        49,
+        89,
+        142,
+        149
+      ],
+      "teachers": [
+        "raphael.laceerda@gmail.com",
+        "lupitacmlaw@gmail.com",
+        "ansonswh@protonmail.ch",
+        "valbarran@dist113.org",
+        "angelika.skotnicka@gmail.com",
+        "yasmingrava2002@gmail.com"
+      ]
+    },
+    {
       "theme": "Grammar - Adjectives & Pronouns",
       "emoji": "🏷️",
       "count": 5,
@@ -238,30 +264,6 @@
         "profluisacardosola@gmail.com",
         "agbrites@gmail.com",
         "rusiko.rapava@gmail.com"
-      ]
-    },
-    {
-      "theme": "Specialized Topics",
-      "emoji": "🌾",
-      "count": 5,
-      "examples": [
-        "agriculture",
-        "survive",
-        "d'arce brazilian jiu-jitsu"
-      ],
-      "requestIds": [
-        14,
-        42,
-        49,
-        89,
-        142
-      ],
-      "teachers": [
-        "raphael.laceerda@gmail.com",
-        "lupitacmlaw@gmail.com",
-        "ansonswh@protonmail.ch",
-        "valbarran@dist113.org",
-        "angelika.skotnicka@gmail.com"
       ]
     },
     {
@@ -587,6 +589,20 @@
       ],
       "teachers": [
         "schooltutorsonline@gmail.com"
+      ]
+    },
+    {
+      "theme": "Family & Relationships",
+      "emoji": "👨‍👩‍👧‍👦",
+      "count": 1,
+      "examples": [
+        "I think it would be a good idea if the lesson abou"
+      ],
+      "requestIds": [
+        148
+      ],
+      "teachers": [
+        "agbrites@gmail.com"
       ]
     }
   ],
@@ -1389,6 +1405,21 @@
     {
       "teacher": "mermeflorez@gmail.com",
       "idea": "💡 New Activity Request A member has submitted an activity idea! From: MIGUEL MEJIA Email: mermeflorez@gmail.com Activity Idea: Hi. Is the activity called &quot;Past Tech Research Topics&quot; not available on the new site? I can&#39;t find it here.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "agbrites@gmail.com",
+      "idea": "I think it would be a good idea if the lesson about family were based on family trees, with pictures, names and the family terms. It's easy for real beginners to memorize , don't you agree?",
+      "date": "unknown"
+    },
+    {
+      "teacher": "yasmingrava2002@gmail.com",
+      "idea": "geography",
+      "date": "unknown"
+    },
+    {
+      "teacher": "magalu7519@gmail.com",
+      "idea": "💡 New Activity Request A member has submitted an activity idea! From: Magda Oliveira Email: magalu7519@gmail.com Activity Idea: Hi, I already have an active plan, but this is the second time I’ve tried to use the new platform, and the activities ar",
       "date": "unknown"
     }
   ]
