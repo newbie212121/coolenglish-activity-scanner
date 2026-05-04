@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-01T08:19:43.014808",
-  "total": 151,
+  "last_updated": "2026-05-04T08:36:24.120111",
+  "total": 152,
   "clusters": [
     {
       "theme": "Daily Conversations",
       "emoji": "💬",
-      "count": 10,
+      "count": 11,
       "examples": [
         "good morning",
         "Everyday English Dialogues",
@@ -21,7 +21,8 @@
         135,
         136,
         146,
-        151
+        151,
+        152
       ],
       "teachers": [
         "roseanemedeiros9@gmail.com",
@@ -33,7 +34,8 @@
         "angelarenata_1@hotmail.com",
         "fmarruda@gmail.com",
         "speakup.privateclasses@gmail.com",
-        "teacheramandavluz@gmail.com"
+        "teacheramandavluz@gmail.com",
+        "julianapdl@gmail.com"
       ]
     },
     {
@@ -1427,6 +1429,11 @@
     {
       "teacher": "teacheramandavluz@gmail.com",
       "idea": "An intro class explaining greetings ( hi, hello, good morning, good afternnon, good evening and goodnight)",
+      "date": "unknown"
+    },
+    {
+      "teacher": "julianapdl@gmail.com",
+      "idea": "a listening activity in which the studentes are going to listen to 2 or 3 short stories with 2 or 3 differences between them, and they have to say what was the differences",
       "date": "unknown"
     }
   ]
