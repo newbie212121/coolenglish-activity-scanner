@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-04T08:36:24.120111",
-  "total": 152,
+  "last_updated": "2026-05-05T08:18:22.354518",
+  "total": 154,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -125,6 +125,34 @@
       ]
     },
     {
+      "theme": "Grammar - Verb Tenses",
+      "emoji": "⏰",
+      "count": 7,
+      "examples": [
+        "Present Perfect",
+        "simple past",
+        "past perfect"
+      ],
+      "requestIds": [
+        13,
+        24,
+        25,
+        110,
+        134,
+        139,
+        153
+      ],
+      "teachers": [
+        "rafadorn@gmail.com",
+        "paranelsoncarvalho@gmail.com",
+        "profluisacardosola@gmail.com",
+        "joanaespinosa@gmail.com",
+        "smartonenglishschool@gmail.com",
+        "sergiovera13@hotmail.com",
+        "teacheramandavluz@gmail.com"
+      ]
+    },
+    {
       "theme": "Business English",
       "emoji": "💼",
       "count": 6,
@@ -167,32 +195,6 @@
         "teacheralek.123@gmail.com",
         "aulasmaterialgirl@gmail.com",
         "charlenejoseph123@gmail.com"
-      ]
-    },
-    {
-      "theme": "Grammar - Verb Tenses",
-      "emoji": "⏰",
-      "count": 6,
-      "examples": [
-        "Present Perfect",
-        "simple past",
-        "past perfect"
-      ],
-      "requestIds": [
-        13,
-        24,
-        25,
-        110,
-        134,
-        139
-      ],
-      "teachers": [
-        "rafadorn@gmail.com",
-        "paranelsoncarvalho@gmail.com",
-        "profluisacardosola@gmail.com",
-        "joanaespinosa@gmail.com",
-        "smartonenglishschool@gmail.com",
-        "sergiovera13@hotmail.com"
       ]
     },
     {
@@ -395,20 +397,23 @@
     {
       "theme": "Grammar - Phrasal Verbs",
       "emoji": "📚",
-      "count": 2,
+      "count": 3,
       "examples": [
         "phrasal",
-        "make"
+        "make",
+        "I’d like to request more role-play activities to p"
       ],
       "requestIds": [
         1,
         15,
         66,
-        72
+        72,
+        154
       ],
       "teachers": [
         "ihealthshop@gmail.com",
-        "yasmingrava2002@gmail.com"
+        "yasmingrava2002@gmail.com",
+        "angelarenata_1@hotmail.com"
       ]
     },
     {
@@ -1434,6 +1439,16 @@
     {
       "teacher": "julianapdl@gmail.com",
       "idea": "a listening activity in which the studentes are going to listen to 2 or 3 short stories with 2 or 3 differences between them, and they have to say what was the differences",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacheramandavluz@gmail.com",
+      "idea": "Simple present test isn't working",
+      "date": "unknown"
+    },
+    {
+      "teacher": "angelarenata_1@hotmail.com",
+      "idea": "I’d like to request more role-play activities to practice speaking and more phrasal verb activities.",
       "date": "unknown"
     }
   ]
