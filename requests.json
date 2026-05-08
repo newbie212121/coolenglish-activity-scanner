@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-05T08:18:22.354518",
-  "total": 154,
+  "last_updated": "2026-05-08T07:48:11.482416",
+  "total": 155,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -71,7 +71,7 @@
     {
       "theme": "Grammar - Basic Structures",
       "emoji": "📝",
-      "count": 7,
+      "count": 8,
       "examples": [
         "there is",
         "verb to be",
@@ -83,7 +83,8 @@
         34,
         101,
         103,
-        107
+        107,
+        155
       ],
       "teachers": [
         "katijuventus@gmail.com",
@@ -91,7 +92,8 @@
         "symbolidiomas@gmail.com",
         "sfreiretorres@gmail.com",
         "cleytonsantosm@gmail.com",
-        "teacherpaulamaria@gmail.com"
+        "teacherpaulamaria@gmail.com",
+        "joaovitorfranco98@gmail.com"
       ]
     },
     {
@@ -1449,6 +1451,11 @@
     {
       "teacher": "angelarenata_1@hotmail.com",
       "idea": "I’d like to request more role-play activities to practice speaking and more phrasal verb activities.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "joaovitorfranco98@gmail.com",
+      "idea": "affirmative, negative and interrogative. It's, in my opinion, one of the most important subjects one should learn in this level and I just can't find material on it. That said, here's my humble suggestion knowing that you've been doing a great job with the new activities! Best regards, John Rocha.",
       "date": "unknown"
     }
   ]
