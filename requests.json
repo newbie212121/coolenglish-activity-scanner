@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-08T07:48:11.482416",
-  "total": 155,
+  "last_updated": "2026-05-10T08:13:54.244660",
+  "total": 156,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -155,6 +155,33 @@
       ]
     },
     {
+      "theme": "Entertainment & Media",
+      "emoji": "🎬",
+      "count": 7,
+      "examples": [
+        "memes",
+        "movie vocabulary",
+        "super bowl"
+      ],
+      "requestIds": [
+        2,
+        32,
+        33,
+        67,
+        117,
+        118,
+        138,
+        156
+      ],
+      "teachers": [
+        "sfreiretorres@gmail.com",
+        "teacheralek.123@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "charlenejoseph123@gmail.com",
+        "sergiosrezende89@gmail.com"
+      ]
+    },
+    {
       "theme": "Business English",
       "emoji": "💼",
       "count": 6,
@@ -172,31 +199,6 @@
       "teachers": [
         "fmarruda@gmail.com",
         "fluentwithchris@gmail.com"
-      ]
-    },
-    {
-      "theme": "Entertainment & Media",
-      "emoji": "🎬",
-      "count": 6,
-      "examples": [
-        "memes",
-        "movie vocabulary",
-        "super bowl"
-      ],
-      "requestIds": [
-        2,
-        32,
-        33,
-        67,
-        117,
-        118,
-        138
-      ],
-      "teachers": [
-        "sfreiretorres@gmail.com",
-        "teacheralek.123@gmail.com",
-        "aulasmaterialgirl@gmail.com",
-        "charlenejoseph123@gmail.com"
       ]
     },
     {
@@ -1456,6 +1458,11 @@
     {
       "teacher": "joaovitorfranco98@gmail.com",
       "idea": "affirmative, negative and interrogative. It's, in my opinion, one of the most important subjects one should learn in this level and I just can't find material on it. That said, here's my humble suggestion knowing that you've been doing a great job with the new activities! Best regards, John Rocha.",
+      "date": "unknown"
+    },
+    {
+      "teacher": "sergiosrezende89@gmail.com",
+      "idea": "Make videos about TV series like walking dead",
       "date": "unknown"
     }
   ]
