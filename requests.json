@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-13T08:51:28.286266",
-  "total": 157,
+  "last_updated": "2026-05-14T08:44:26.572625",
+  "total": 159,
   "clusters": [
     {
       "theme": "Daily Conversations",
@@ -182,6 +182,34 @@
       ]
     },
     {
+      "theme": "Advanced Grammar",
+      "emoji": "🎓",
+      "count": 7,
+      "examples": [
+        "conditionals",
+        "quatifiers",
+        "So (adjective) that and such (noun phrase) that st"
+      ],
+      "requestIds": [
+        38,
+        94,
+        102,
+        108,
+        114,
+        141,
+        159
+      ],
+      "teachers": [
+        "jefferson.asrs@gmail.com",
+        "aulasmaterialgirl@gmail.com",
+        "daviesmic98@gmail.com",
+        "profluisacardosola@gmail.com",
+        "tc1@youduka.com",
+        "m.soledad.suares@gmail.com",
+        "rusiko.rapava@gmail.com"
+      ]
+    },
+    {
       "theme": "Business English",
       "emoji": "💼",
       "count": 6,
@@ -199,32 +227,6 @@
       "teachers": [
         "fmarruda@gmail.com",
         "fluentwithchris@gmail.com"
-      ]
-    },
-    {
-      "theme": "Advanced Grammar",
-      "emoji": "🎓",
-      "count": 6,
-      "examples": [
-        "conditionals",
-        "quatifiers",
-        "So (adjective) that and such (noun phrase) that st"
-      ],
-      "requestIds": [
-        38,
-        94,
-        102,
-        108,
-        114,
-        141
-      ],
-      "teachers": [
-        "jefferson.asrs@gmail.com",
-        "aulasmaterialgirl@gmail.com",
-        "daviesmic98@gmail.com",
-        "profluisacardosola@gmail.com",
-        "tc1@youduka.com",
-        "m.soledad.suares@gmail.com"
       ]
     },
     {
@@ -1482,6 +1484,16 @@
     {
       "teacher": "teacheramandavluz@gmail.com",
       "idea": "A class about seasons",
+      "date": "unknown"
+    },
+    {
+      "teacher": "teacheramandavluz@gmail.com",
+      "idea": "Do more custom activities, they are amazing",
+      "date": "unknown"
+    },
+    {
+      "teacher": "rusiko.rapava@gmail.com",
+      "idea": "adverbs of degree",
       "date": "unknown"
     }
   ]
